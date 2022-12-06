@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    tools:contexto="com.telederma.gov.co.FirmaDigitalActivity">
+
+    <TextView
+        android:gravity="center"
+        android:padding="5dp"
+        android:textSize="8pt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/soy_nuevo_firma_title" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="250dp">
+
+        <com.telederma.gov.co.views.FirmaView
+            android:id="@+id/firma_view"
+            android:background="@drawable/border_style"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+
+        <Button
+            android:id="@+id/btn_confirmar"
+            style="@style/telederma_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/label_confirmar"
+            android:layout_weight="33"
+            android:layout_marginRight="5dp" />
+
+        <Button
+            android:id="@+id/btn_borrar"
+            style="@style/telederma_button_gray"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/label_borrar"
+            android:layout_weight="33"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp" />
+
+        <Button
+            android:id="@+id/btn_cancelar"
+            style="@style/telederma_button_gray"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="33"
+            android:layout_marginLeft="5dp"
+            android:text="@string/label_cancelar" />
+    </LinearLayout>
+
+</LinearLayout>

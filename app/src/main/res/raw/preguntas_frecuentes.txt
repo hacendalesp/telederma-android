@@ -1,0 +1,124 @@
+<ol style="margin-left:15px; padding-left:0px;">
+    <li style="font-weight:bold">
+      ¿Cuál es el tiempo de respuesta de una teleconsulta?
+      <p style="font-weight:normal">
+        R/: El tiempo máximo de respuesta de una teleconsulta es de 24 horas hábiles. Sin
+        embargo, el tiempo puede ser inferior a 8 horas hábiles, dependiendo del acuerdo
+        establecido en el convenio o contrato con Telederma.
+      </p>
+    </li>
+    <li style="font-weight:bold">
+      ¿Envié una teleconsulta y no ha sido resuelta?
+      <p style="font-weight:normal">
+        R:/ El tiempo máximo de respuesta de una teleconsulta es de 24 horas hábiles. Si
+        este tiempo ya fue superado, favor revise los créditos disponibles en el Menú
+        principal &gt; Módulo Gestión &gt; Créditos. Si no cuenta con créditos disponibles, la
+        teleconsulta no ha sido asignada a un dermatólogo. Favor notificar esta situación
+        al área administrativa de su institución.
+      </p>
+    </li>
+    <li style="font-weight:bold">
+      ¿Cuántos créditos tengo disponibles?
+      <p style="font-weight:normal">
+        R/: Para conocer el número de créditos disponibles en la App Telederma, favor
+        dirigirse a Menú principal &gt; Módulo Gestión &gt; Créditos.
+      </p>
+    </li>
+    <li style="font-weight:bold">
+      ¿En que consiste la certificación en telemedicina?
+      <p style="font-weight:normal">
+        R/: La certificación en teleconsulta le permitirá cumplir con los requerimientos
+        normativos exigidos por el Ministerio de Salud y Protección Social y la política de
+        calidad de Telederma del Hospital Universitario Centro Dermatológico Federico
+        Lleras Acosta.
+      </p>
+    </li>
+    <li style="font-weight:bold">
+      ¿Cómo puede certificarme en la App Telederma?
+      <p style="font-weight:normal">
+        R/: Previo a realizar la certificación, es indispensable revisar los diferentes
+        recursos disponibles en el módulo de “Aprende” de la App Telederma
+        (generalidades, manejo de la App, toma de imágenes, semiología cutánea y toma
+        de biopsia). A través de un corto cuestionario se evalúan los conocimientos sobre
+        los diferentes aspectos de generalidades, manejo de la App, toma de imágenes,
+        semiología cutánea y toma de biopsia.
+      </p>
+    </li>
+    <li style="font-weight:bold">
+      ¿Dónde recibo mi certificación?
+      <p style="font-weight:normal">
+        R/: Usted podrá recibir su certificación si ha contestado más del 70% de las
+        respuestas correctas. La certificación le llegará automáticamente al correo
+        electrónico que ha diligenciado en el momento de inscribirse en la App Telederma.
+      </p>
+    </li>
+    <li style="font-weight:bold">
+      ¿Cómo puedo realizar una llamada desde el celular y utilizar otras
+      aplicaciones?
+      <p style="font-weight:normal">
+        R/: El celular ha sido configurado para operar exclusivamente con la App
+        Telederma. Este dispositivo no tiene acceso para hacer llamadas o utilizar otras
+        aplicaciones.
+      </p>
+    </li>
+    <li style="font-weight:bold">
+      ¿Para qué sirve la base que trae el Kit Telederma?
+      <p style="font-weight:normal">
+        R/: La base permite mejorar la toma de imágenes. Ayuda a disminuir el
+        movimiento y facilita el enfoque de una lesión cuando se utiliza el zoom a 6x y 8x
+        principalmente.
+      </p>
+    </li>
+    <li style="font-weight:bold">
+      ¿Qué significan estos estados en la teleconsulta?
+      <p style="font-weight:normal">
+        <img style="max-width: 100%" src="file:///android_res/drawable/certificacion_pregunta_10.png"/>
+        R/: Teleconsulta: 1) Resuelta 2) En proceso 3) Con requerimiento 4) Respuesta pendiente
+      </p>
+    </li>
+    <li style="font-weight:bold">
+      ¿Qué significa una teleconsulta resuelta?
+      <p style="font-weight:normal">
+        R/: Significa que la teleconsulta recibió una respuesta por parte del dermatólogo.
+        Incluye diagnóstico y manejo para el paciente.
+      </p>
+    </li>
+    <li style="font-weight:bold">
+      ¿Qué significa una teleconsulta en proceso?
+      <p style="font-weight:normal">
+        R/: Significa que fue creado un “nuevo paciente” o una “nueva consulta” en la App
+        Telederma pero que no se ha terminado de diligenciar y no ha sido enviada al
+        dermatólogo.
+      </p>
+    </li>
+    <li style="font-weight:bold">
+      ¿Qué significa una teleconsulta con requerimiento?
+      <p style="font-weight:normal">
+        R/: Significa que la teleconsulta recibió una respuesta por parte del dermatólogo
+        solicitando información adicional o repetir las imágenes tomadas al paciente.
+      </p>
+    </li>
+    <li style="font-weight:bold">
+      ¿Qué significa una teleconsulta con respuesta pendiente?
+      <p style="font-weight:normal">
+        R/: Significa que la teleconsulta fue enviada exitosamente pero aún no tiene
+        respuesta por parte del dermatólogo.
+      </p>
+    </li>
+    <li style="font-weight:bold">
+      ¿Cómo buscar un paciente que ya fue enviado por la App Telederma?
+      <p style="font-weight:normal">
+        R/: Es muy sencillo. Debe dirigirse al menú ubicado en la parte superior izquierda y
+        seleccionar la opción “Buscar paciente”. Posteriormente, debe introducir el
+        documento de identidad del paciente y seleccionar el botón “Buscar”.
+      </p>
+    </li>
+    <li style="font-weight:bold">
+      ¿Cómo puedo modificar mis datos de contacto?
+      <p style="font-weight:normal">
+        R/: Debe dirigirse al menú ubicado en la parte superior izquierda y seleccionar la
+        opción de “Mi perfil”. Podrá modificar: Nombre, Apellidos, Celular y Correo. No es
+        posible modificar el número de usuario.
+      </p>
+    </li>
+</ol>

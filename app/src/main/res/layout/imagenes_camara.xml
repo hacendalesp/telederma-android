@@ -1,0 +1,152 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:contexto="com.telederma.gov.co.fragments.ImagenesCamaraFragment"
+    android:layout_margin="5dp"
+    android:background="@color/white">
+
+    <ScrollView
+        android:id="@+id/scroll_imagenes"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/ll_content_next"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:focusable="true"
+            android:focusableInTouchMode="true">
+
+            <LinearLayout android:id="@+id/contenedor_lesiones"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="15sp"
+                android:paddingRight="15sp">
+
+                <LinearLayout android:id="@+id/btn_registrar_nueva_lesion"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:orientation="horizontal"
+                    style="@style/telederma_button"
+                    android:gravity="center"
+                    android:visibility="visible">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/white"
+                        android:textSize="8pt"
+                        android:textStyle="bold"
+                        android:text="@string/nueva_consulta_registro_consulta_anadir_lesion"/>
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="16dp"
+                        android:background="@drawable/ic_menu_nueva_lesion" />
+
+                </LinearLayout>
+
+
+                <!--<Button-->
+                    <!--android:id="@+id/btn_registrar_nueva_lesion"-->
+                    <!--android:text="@string/nueva_consulta_registro_consulta_anadir_lesion"-->
+                    <!--android:layout_alignParentBottom="true"-->
+                    <!--android:textColor="@color/white"-->
+                    <!--android:padding="@dimen/pading"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="50dp"-->
+                    <!--style="@style/telederma_button_dark" />-->
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout android:id="@+id/ll_content_next"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn2"
+                android:layout_width="15sp"
+                android:layout_height="15sp"
+                android:layout_margin="5sp"
+                android:background="@drawable/circulo_azul_claro" />
+
+            <Button
+                android:id="@+id/btn3"
+                android:layout_width="15sp"
+                android:layout_height="15sp"
+                android:layout_margin="5sp"
+                android:background="@drawable/circulo_azul_claro" />
+
+            <Button
+                android:id="@+id/btn5"
+                android:layout_width="15sp"
+                android:layout_height="15sp"
+                android:layout_margin="5sp"
+                android:background="@drawable/circulo_azul_claro" />
+
+            <Button
+                android:id="@+id/btn1"
+                android:layout_width="15sp"
+                android:layout_height="15sp"
+                android:layout_margin="5sp"
+                android:background="@drawable/circulo_azul" />
+
+
+            <Button
+                android:id="@+id/btn4"
+                android:layout_width="15sp"
+                android:layout_height="15sp"
+                android:layout_margin="5sp"
+                android:background="@drawable/circulo_gris" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="15sp"
+            android:paddingRight="15sp">
+
+            <Button
+                android:id="@+id/btn_siguiente"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                style="@style/telederma_button_dark"
+                android:text="@string/nueva_consulta_registro_consulta_siguiente" />
+
+            <Button
+                android:id="@+id/btn_resumen"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/telederma_button_dark"
+                android:text="@string/nueva_consulta_registro_consulta_resumen"
+                android:visibility="gone" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+</RelativeLayout>

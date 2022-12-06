@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="none">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4sp"
+            android:background="@drawable/round_gray_background"
+            android:orientation="vertical"
+            android:id="@+id/contenedor_acerca_de_asunto"
+            android:visibility="gone">
+
+            <TextView
+                style="@style/telederma_text_view_formulario_blue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/acerca_de_dialog_asunto" />
+
+            <TextView
+                android:id="@+id/id_acerca_de_asunto"
+                style="@style/telederma_text_view_formulario_gray"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4sp"
+            android:background="@drawable/round_gray_background"
+            android:orientation="vertical"
+            android:id="@+id/contenedor_acerca_de_descripcion"
+            android:visibility="gone">
+
+            <TextView
+                style="@style/telederma_text_view_formulario_blue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/acerca_de_dialog_descripcion" />
+
+            <TextView
+                android:id="@+id/id_acerca_de_descripcion"
+                style="@style/telederma_text_view_formulario_gray"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4sp"
+            android:background="@drawable/round_gray_background"
+            android:orientation="vertical"
+            android:id="@+id/contenedor_acerca_de_imagen"
+            android:visibility="invisible"
+            >
+
+            <TextView
+                style="@style/telederma_text_view_formulario_blue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/acerca_de_dialog_imagen" />
+
+            <com.telederma.gov.co.views.ExtendableGridView
+                android:id="@+id/id_acerca_de_imagen"
+                android:columnWidth="70dp"
+                android:layout_marginTop="5dp"
+                android:numColumns="1"
+                android:stretchMode="columnWidth"
+                android:layout_width="200dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="0"
+                android:layout_gravity="center"
+
+                ></com.telederma.gov.co.views.ExtendableGridView>
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4sp"
+            android:background="@drawable/round_gray_background"
+            android:orientation="vertical"
+            android:id="@+id/contenedor_acerca_de_respuesta"
+            android:visibility="gone">
+
+            <TextView
+                style="@style/telederma_text_view_formulario_blue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/acerca_de_dialog_respuesta" />
+
+            <TextView
+                android:id="@+id/id_acerca_de_respuesta"
+                style="@style/telederma_text_view_formulario_gray"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4sp"
+            android:background="@drawable/round_gray_background"
+            android:orientation="vertical"
+            android:id="@+id/contenedor_acerca_de_imagen_respuesta"
+            android:visibility="gone">
+
+            <TextView
+                style="@style/telederma_text_view_formulario_blue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/acerca_de_dialog_imagen_respuesta" />
+
+            <com.telederma.gov.co.views.ExtendableGridView
+                android:id="@+id/id_acerca_de_imagen_respuesta"
+                android:numColumns="1"
+                android:layout_width="200dip"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                ></com.telederma.gov.co.views.ExtendableGridView>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>
+
+

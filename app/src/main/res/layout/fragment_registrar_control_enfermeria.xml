@@ -1,0 +1,325 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    android:padding="15sp"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:focusable="true"
+            android:focusableInTouchMode="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:paddingLeft="20dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/control_mejoria_subjetiva"
+                    android:textSize="16sp"
+                    style="@style/telederma_text_view_label" />
+
+                <SeekBar
+                    android:id="@+id/seekBar_mejoria_subjetiva"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    android:backgroundTint="@color/colorPrimaryDark"
+                    android:progressBackgroundTint="@color/colorPrimary"
+                    android:progressBackgroundTintMode="add"
+                    android:layout_marginTop="5dp"
+                    android:progress="0"
+                    android:thumbTintMode="src_in"
+                    android:max="100" />
+
+                <TextView
+                    android:id="@+id/count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0/100"
+                    android:layout_gravity="center"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/historia_enfermeria_diagnostico_tamano_ulcera"
+                style="@style/telederma_text_view_label"
+                android:paddingLeft="20dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="1"
+                android:orientation="horizontal"
+                android:paddingLeft="20dp">
+
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="0dp"
+                    android:layout_weight="0.4"
+                    android:inputType="numberPassword|textVisiblePassword"
+                    android:imeOptions="actionNext"
+                    android:hint="@string/historia_enfermeria_diagnostico_tamano_ulcera_largo"
+                    android:id="@+id/id_largo"/>
+
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:textAlignment="center"
+                    android:layout_gravity="center"
+                    android:layout_weight="0.1"
+                    android:text="x"
+                    android:layout_marginTop="9dp"
+                    style="@style/telederma_text_view_label" />
+
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.4"
+                    android:inputType="numberPassword|textVisiblePassword"
+                    android:imeOptions="actionNext"
+                    android:hint="@string/historia_enfermeria_diagnostico_tamano_ulcera_ancho"
+                    android:id="@+id/id_ancho"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="0.1"
+                    android:layout_height="match_parent"
+                    android:textAlignment="center"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="9dp"
+                    android:text="@string/historia_enfermeria_diagnostico_tamano_ulcera_cm"
+                    style="@style/telederma_text_view_label" />
+
+
+
+            </LinearLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="7sp" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:paddingLeft="20dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/control_enfermeria_intensidad_dolor"
+                    android:textSize="16sp"
+                    style="@style/telederma_text_view_label" />
+
+                <SeekBar
+                    android:id="@+id/seekBar_intensidad"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    android:backgroundTint="@color/colorPrimaryDark"
+                    android:progressBackgroundTint="@color/colorPrimary"
+                    android:progressBackgroundTintMode="add"
+                    android:layout_marginTop="5dp"
+                    android:progress="0"
+                    android:thumbTintMode="src_in"
+                    android:max="100" />
+
+                <TextView
+                    android:id="@+id/count2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0/100"
+                    android:layout_gravity="center"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="20dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/control_enfermeria_tolera_tratamiento"
+                    android:gravity="left"
+                    android:layout_marginTop="16sp"
+                    style="@style/telederma_text_view_label" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+                        android:id="@+id/id_tolera_tratamiento"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="left"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/id_tolera_tratamiento_si"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="16dp"
+                            android:checked="false"
+                            android:text="@string/nueva_consulta_registro_consulta_si" />
+
+                        <RadioButton
+                            android:id="@+id/id_tolera_tratamiento_no"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:checked="true"
+                            android:text="@string/nueva_consulta_registro_consulta_no" />
+                    </RadioGroup>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="20dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/control_enfermeria_concepto"
+                    android:gravity="left"
+                    android:layout_marginTop="16sp"
+                    style="@style/telederma_text_view_label" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+
+
+                    <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+                        android:id="@+id/id_concepto_enfermeria"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="left"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text="@string/control_enfermeria_mejoria"
+                            style="@style/telederma_text_view_label"
+                            android:layout_marginLeft="15dp"/>
+
+                        <RadioButton
+                            android:id="@+id/id_concepto_si"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="16dp"
+                            android:checked="false"
+                            android:text="@string/nueva_consulta_registro_consulta_si" />
+
+                        <RadioButton
+                            android:id="@+id/id_concepto_no"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:checked="true"
+                            android:text="@string/nueva_consulta_registro_consulta_no" />
+                    </RadioGroup>
+                </LinearLayout>
+            </LinearLayout>
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="7sp" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4sp"
+                android:orientation="vertical"
+                android:paddingLeft="20dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/control_enfermeria_comentarios"
+                    style="@style/telederma_text_view_label"
+                    android:layout_marginTop="16sp" />
+
+
+                <EditText
+                    android:id="@+id/id_control_enfermeria_comentarios"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="0dp"
+                    android:inputType="text"
+                    android:imeOptions="actionNext"
+                    android:hint="@string/control_enfermeria_comentarios_ingresa" />
+
+            </LinearLayout>
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="7sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_weight="5">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingLeft="15sp"
+                    android:paddingRight="15sp">
+
+                    <Button
+                        android:id="@+id/btn_crear_control"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        style="@style/telederma_button"
+                        android:text="@string/consulta_control_guargar" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

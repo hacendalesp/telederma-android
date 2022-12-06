@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView android:id="@+id/tv_number_requirement"
+        style="@style/telederma_text_view_formulario_blue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="#" />
+
+    <include layout="@layout/data_medical" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView android:id="@+id/tv_date_label"
+            style="@style/telederma_text_view_formulario_blue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/item_requirement_label_date" />
+
+        <TextView android:id="@+id/tv_date_value"
+            style="@style/telederma_text_view_formulario_gray"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="5dp"
+            android:text="fecha" />
+    </LinearLayout>
+
+
+    <TextView android:id="@+id/tv_desc_label"
+        style="@style/telederma_text_view_formulario_blue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/item_requirement_label_desc" />
+
+    <TextView android:id="@+id/tv_desc_value"
+        style="@style/telederma_text_view_formulario_gray"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="desc" />
+
+
+    <!--<TextView android:id="@+id/tv_response_label"-->
+        <!--style="@style/telederma_text_view_formulario_blue"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="@string/item_requirement_label_response" />-->
+
+    <!--<TextView android:id="@+id/tv_response_value"-->
+        <!--style="@style/telederma_text_view_formulario_gray"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="desc" />-->
+
+    <com.telederma.gov.co.views.ReproductorAudioView
+        android:id="@+id/rav_audio_desc_value"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8sp" />
+
+
+
+
+</LinearLayout>

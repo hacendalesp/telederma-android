@@ -1,0 +1,168 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    android:padding="15sp"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:focusable="true"
+            android:focusableInTouchMode="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/grabar_audio_fisico"
+                    android:layout_alignBottom="@+id/grabar_audio_fisico"
+                    android:layout_alignParentStart="true"
+                    android:text="@string/consulta_requerimiento_historia"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="15sp" />
+
+                <include
+                    android:id="@+id/f_examen_fisico"
+                    layout="@layout/speech_long_text"></include>
+
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="25dp"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBaseline="@+id/grabar_audio_fisico"
+                        android:layout_alignBottom="@+id/grabar_audio_fisico"
+                        android:layout_alignParentStart="true"
+                        android:text="@string/consulta_requerimiento_historia"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="15sp" />
+
+
+                    <Button
+                        android:id="@+id/grabar_audio_fisico"
+                        android:layout_width="50sp"
+                        android:layout_height="45sp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginLeft="10sp"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:background="@drawable/round_button"
+                        android:drawableTop="@drawable/ic_mic"
+                        android:drawableTint="@color/white"
+                        android:paddingTop="10dp" />
+
+                    <Button
+                        android:id="@+id/detener_audio_fisico"
+                        android:layout_width="50sp"
+                        android:layout_height="45sp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginLeft="10sp"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:background="@drawable/round_button_red"
+                        android:drawableTop="@drawable/ic_stop"
+                        android:drawableTint="@color/white"
+                        android:paddingTop="10dp"
+                        android:visibility="invisible" />
+
+                    <Space
+                        android:id="@+id/spacio4"
+                        android:layout_width="match_parent"
+                        android:layout_height="7sp"
+                        android:layout_below="@id/grabar_audio_fisico" />
+
+                    <EditText
+                        android:id="@+id/texto_examen_fisico"
+                        android:layout_width="match_parent"
+                        android:layout_height="200sp"
+                        android:layout_below="@id/spacio4"
+                        android:hint="@string/consulta_requerimiento_texto"
+                        android:gravity="center"
+                        android:paddingLeft="5sp"
+                        android:inputType="textMultiLine|textAutoCorrect"
+                        android:background="@drawable/border_style" />
+
+                </RelativeLayout>
+
+                <com.telederma.gov.co.views.ReproductorAudioView
+                    android:id="@+id/reproductor_audio_fisico"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:visibility="gone"
+                    app:showRemoveButton="true" />
+
+            </LinearLayout>
+
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="7sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_alignParentBottom="true"
+                android:gravity="bottom"
+                android:layout_weight="0">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingTop="75dp">
+
+                    <Button
+                        android:id="@+id/btn_crear_respuesta"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        style="@style/telederma_button"
+                        android:text="@string/consulta_requerimiento_confirmar" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

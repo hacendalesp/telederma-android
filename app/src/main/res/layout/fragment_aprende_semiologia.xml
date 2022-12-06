@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <ScrollView
+        android:id="@+id/scv_aprende_semiologia"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/lbl_mensaje"
+                style="@style/telederma_text_view_formulario_gray"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="8sp"
+                android:paddingRight="8sp"
+                android:paddingBottom="8sp"
+                android:paddingTop="24sp"
+                android:textAlignment="center"
+                android:text="@string/aprende_semiologia_mensaje" />
+
+            <LinearLayout
+                android:id="@+id/aprende_contenido_botones"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/lbl_mensaje"
+                android:orientation="vertical">
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/aprende_contenido_botones"
+                android:padding="8sp"
+                android:layout_marginTop="16sp"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/telederma_text_view_formulario_gray"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:text="@string/aprende_semiologia_creditos_titulo" />
+
+                <TextView
+                    style="@style/telederma_text_view_formulario_gray"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/aprende_semiologia_creditos" />
+
+                <TextView
+                    style="@style/telederma_text_view_formulario_gray"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16sp"
+                    android:textStyle="bold"
+                    android:text="@string/aprende_semiologia_creditos_autores_titulo" />
+
+                <TextView
+                    style="@style/telederma_text_view_formulario_gray"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/aprende_semiologia_creditos_autores" />
+
+                <TextView
+                    style="@style/telederma_text_view_formulario_gray"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/aprende_semiologia_creditos_brainco_web" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</FrameLayout>

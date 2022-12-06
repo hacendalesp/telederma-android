@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LogActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp">
+
+        <LinearLayout android:id="@+id/ll_content_filters"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <Button android:id="@+id/btn_all"
+                android:layout_width="0dp"
+                android:layout_height="35dp"
+                android:layout_weight=".3"
+                android:textSize="12dp"
+                style="@style/telederma_button"
+                android:text="Todos"/>
+            <Button android:id="@+id/btn_pendings"
+                android:layout_width="0dp"
+                android:layout_height="35dp"
+                android:layout_weight=".3"
+                android:layout_marginLeft="4dp"
+                android:textSize="12dp"
+                style="@style/telederma_button"
+                android:text="Pendientes"/>
+            <Button android:id="@+id/btn_skips"
+                android:layout_width="0dp"
+                android:layout_height="35dp"
+                android:layout_weight=".3"
+                android:layout_marginLeft="4dp"
+                android:textSize="12dp"
+                style="@style/telederma_button"
+                android:text="Omitidos"/>
+        </LinearLayout>
+
+        <TextView android:id="@+id/tv_message"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:text="Sin registros pendientes"/>
+
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"
+            android:layout_height="match_parent"
+            android:visibility="visible"/>
+
+    </LinearLayout>
+
+
+</android.support.constraint.ConstraintLayout>

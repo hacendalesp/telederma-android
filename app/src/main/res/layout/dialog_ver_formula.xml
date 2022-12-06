@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="none">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4sp"
+            android:background="@drawable/round_gray_background"
+            android:orientation="vertical">
+            <TextView
+                style="@style/telederma_text_view_label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/dialog_ver_formula_cod_medicamento" />
+
+            <TextView
+                android:id="@+id/txt_codigo_medicamento"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:enabled="false"
+                style="@style/telederma_text_view_formulario_gray"
+                android:layout_marginTop="0dp"
+                android:text=""/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4sp"
+            android:background="@drawable/round_gray_background"
+            android:orientation="vertical">
+            <TextView
+                style="@style/telederma_text_view_label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/dialog_ver_formula_tipo_medicamento" />
+
+            <TextView
+                android:id="@+id/txt_tipo_medicamento"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                style="@style/telederma_text_view_formulario_gray"
+                android:enabled="false"
+                android:text=""
+                android:layout_marginTop="0dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4sp"
+            android:background="@drawable/round_gray_background"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/telederma_text_view_label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/dialog_ver_formula_medicamento_generico" />
+
+            <TextView
+                android:id="@+id/txt_medicamento_generico"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:enabled="false"
+                style="@style/telederma_text_view_formulario_gray"
+                android:gravity="left"
+                android:layout_marginTop="0dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4sp"
+            android:background="@drawable/round_gray_background"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/telederma_text_view_label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/dialog_ver_formula_forma_farmaceutica" />
+
+            <TextView
+                android:id="@+id/txt__forma_farmaceutica"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:enabled="false"
+                style="@style/telederma_text_view_formulario_gray"
+                android:gravity="left"
+                android:layout_marginTop="0dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4sp"
+            android:background="@drawable/round_gray_background"
+            android:orientation="vertical">
+            <TextView
+                style="@style/telederma_text_view_label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/dialog_ver_formula_concentracion" />
+
+            <TextView
+                android:id="@+id/txt_concentracion_medicamento"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:enabled="false"
+                style="@style/telederma_text_view_formulario_gray"
+                android:gravity="left"
+                android:layout_marginTop="0dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4sp"
+            android:background="@drawable/round_gray_background"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/telederma_text_view_label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/dialog_ver_formula_unidad_medida" />
+
+            <TextView
+                android:id="@+id/txt_unidad_medida_medicamento"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:enabled="false"
+                style="@style/telederma_text_view_formulario_gray"
+                android:gravity="left"
+                android:layout_marginTop="0dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4sp"
+            android:background="@drawable/round_gray_background"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/telederma_text_view_label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/dialog_ver_formula_nro_unidades" />
+
+            <TextView
+                android:id="@+id/txt_numero_unidades"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:enabled="false"
+                style="@style/telederma_text_view_formulario_gray"
+                android:gravity="left"
+                android:layout_marginTop="0dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4sp"
+            android:background="@drawable/round_gray_background"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/telederma_text_view_label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/dialog_ver_formula_comentarios" />
+
+            <TextView
+                android:id="@+id/txt_comentarios"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:enabled="false"
+                style="@style/telederma_text_view_formulario_gray"
+                android:gravity="left"
+                android:layout_marginTop="0dp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

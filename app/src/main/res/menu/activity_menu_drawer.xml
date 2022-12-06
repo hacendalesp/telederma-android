@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:showIn="navigation_view"
+    app:itemBackground="@drawable/item_menu_principal"
+    app:itemTextColor="@drawable/item_text_menuprincipal">
+    <group
+        android:id="@+id/menuGrp1"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_consultas"
+            android:icon="@drawable/ic_menu_consultas"
+            android:title="@string/action_consultas" />
+        <item
+            android:id="@+id/nav_nueva_consulta"
+            android:icon="@drawable/ic_menu_nueva_consulta"
+            android:title="@string/action_nueva_consulta" />
+        <item
+            android:id="@+id/nav_pacientes"
+            android:icon="@drawable/ic_menu_pacientes"
+            android:title="@string/action_pacientes" />
+        <item
+            android:id="@+id/nav_aprende"
+            android:icon="@drawable/ic_menu_aprende"
+            android:title="@string/action_aprende" />
+        <item
+            android:id="@+id/nav_gestion"
+            android:icon="@drawable/ic_menu_gestion"
+            android:title="@string/action_gestion" />
+        <item
+            android:id="@+id/nav_mi_perfil"
+            android:icon="@drawable/ic_menu_mi_perfil"
+            android:title="@string/action_mi_perfil" />
+    </group>
+
+    <group
+        android:id="@+id/menuGrp7"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_acerca_de_preguntas_frecuentes"
+            android:title="@string/acerca_de_preguntas_frecuentes" />
+        <item
+            android:id="@+id/nav_acerca_de"
+            android:title="@string/action_acerca_de" />
+        <item
+            android:id="@+id/nav_creditos"
+            android:title="@string/action_creditos" />
+
+        <item
+            android:id="@+id/nav_salir"
+            android:title="@string/action_salir" />
+        <item
+            android:id="@+id/nav_db"
+            android:title="DB"
+            android:visible="false"/>
+        <item
+            android:id="@+id/nav_cuerpo"
+            android:title="Cuerpo"
+            android:visible="false"/>
+    </group>
+
+</menu>

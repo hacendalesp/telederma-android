@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:contexto="com.telederma.gov.co.fragments.BusquedaPacienteFragment">
+
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/subtitle"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="11dp"
+            android:text="@string/nueva_consulta_head"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/spacios" />
+
+
+        <LinearLayout android:id="@+id/ll_step1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="15sp"
+            android:paddingRight="15sp">
+
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/spacios" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/telederma_text_view_label"
+                android:text="@string/nueva_consulta_paciente"
+                android:textColor="@color/colorPrimaryDark" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/spacios" />
+
+            <EditText
+                android:id="@+id/txt_search"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="numberPassword|textVisiblePassword"
+                android:hint="@string/nueva_consulta_ingresa_numero_documento"
+                />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/spacios" />
+
+
+            <Button
+                android:id="@+id/btn_buscar_paceinte"
+                style="@style/telederma_imagebutton_dark"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableRight="@drawable/ic_search"
+                android:paddingStart="25dp"
+                android:gravity="center"
+                android:text="@string/nueva_consulta_buscar"
+                android:drawableTint="@color/white" />
+
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/spacios" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/nueva_consulta_buscar_resultados"
+                android:textColor="@color/colorPrimaryDark" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/spacios" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimaryDark"
+            android:textSize="1sp" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/spacios" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="10">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="4.5"
+                android:text="@string/nueva_consulta_head_paciente"
+                android:paddingLeft="10dp"
+                android:gravity="center"
+                android:textSize="7pt" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="3.5"
+                android:text="@string/nueva_consulta_head_fecha"
+                android:gravity="center"
+                android:textSize="7pt" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:text="@string/nueva_consulta_head_estado"
+                android:textSize="7pt" />
+
+        </LinearLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/spacios" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimaryDark"
+            android:textSize="1sp" />
+
+
+        <LinearLayout
+            android:id="@+id/id_text_not_found"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:visibility="gone"
+            android:background="@drawable/subtitle">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:text="@string/msj_nueva_consulta_buscar_consulta"
+                android:textSize="@dimen/txt_texto"
+                android:gravity="center" />
+
+        </LinearLayout>
+
+
+        <ExpandableListView
+            android:id="@+id/parentList"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+
+            android:layout_weight="1"></ExpandableListView>
+
+
+        <Button
+            android:id="@+id/btn_registrar_paciente"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimaryDark"
+            android:text="@string/nueva_consulta_nuevo_paciente"
+            android:layout_weight="0"
+            android:drawablePadding="20dp"
+            android:textSize="8pt"
+            android:layout_alignParentBottom="true"
+            android:drawableRight="@drawable/ic_person_add"
+            android:drawableTint="@color/white"
+            android:textColor="@color/white"
+            android:gravity="right|center"
+            android:paddingRight="20dp"
+            android:visibility="gone"/>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+

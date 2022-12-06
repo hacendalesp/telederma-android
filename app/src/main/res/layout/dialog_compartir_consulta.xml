@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textSize="8pt"
+        android:text="@string/consultas_compartir_consulta" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_marginTop="16sp">
+
+        <LinearLayout
+            android:id="@+id/chk_group_consultas"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical" />
+
+    </ScrollView>
+
+    <Button
+        style="@style/telederma_button"
+        android:id="@+id/btn_enviar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableTint="@color/white"
+        android:drawableRight="@drawable/ic_send"
+        android:layout_marginTop="16sp"
+        android:text="@string/label_enviar" />
+
+    <Button
+        style="@style/telederma_button_gray"
+        android:id="@+id/btn_cancelar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableTint="@color/white"
+        android:layout_marginTop="16sp"
+        android:text="@string/label_cancelar" />
+
+</LinearLayout>

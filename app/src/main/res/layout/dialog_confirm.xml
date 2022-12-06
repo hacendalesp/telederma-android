@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_title"
+            style="@style/telederma_text_view_formulario_blue"
+            android:textColor="@color/colorPrimaryDark"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="¿Estas seguro?"/>
+
+
+        <TextView
+            android:id="@+id/tv_desc"
+            style="@style/telederma_text_view_formulario_blue"
+            android:textColor="@color/blue_gray"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:gravity="center"
+            android:text="Sino seleccionas una opcion se agregara por defecto la L989 "/>
+
+        <Button
+            android:id="@+id/btn_send"
+            style="@style/telederma_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16sp"
+            android:text="Continuar" />
+
+        <Button
+            android:id="@+id/btn_cancel"
+            style="@style/telederma_button_gray"
+            android:layout_marginTop="16sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/label_cancelar" />
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:gravity="center_vertical"
+    android:padding="16sp"
+    tools:context="com.telederma.gov.co.fragments.AprendeFragment">
+
+    <Button
+        android:id="@+id/btn_que_es_telederma"
+        style="@style/telederma_button_dark"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16sp"
+        android:drawableTint="@color/white"
+        android:text="@string/aprende_que_es_telederma" />
+
+    <Button
+        android:id="@+id/btn_manejo_app"
+        style="@style/telederma_button_dark"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16sp"
+        android:drawableTint="@color/white"
+        android:text="@string/aprende_manejo_app" />
+
+    <Button
+        android:id="@+id/btn_toma_imagenes"
+        style="@style/telederma_button_dark"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16sp"
+        android:drawableTint="@color/white"
+        android:text="@string/aprende_toma_imagenes" />
+
+    <Button
+        android:id="@+id/btn_semiologia"
+        style="@style/telederma_button_dark"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16sp"
+        android:drawableTint="@color/white"
+        android:text="@string/aprende_semiologia" />
+
+    <Button
+        android:id="@+id/btn_toma_biopsia"
+        style="@style/telederma_button_dark"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16sp"
+        android:drawableTint="@color/white"
+        android:text="@string/aprende_toma_biopsia" />
+
+    <Button
+        android:id="@+id/btn_consejos"
+        style="@style/telederma_button_dark"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16sp"
+        android:drawableTint="@color/white"
+        android:visibility="gone"
+        android:text="@string/aprende_consejos" />
+
+    <Button
+        android:id="@+id/btn_certificacion"
+        style="@style/telederma_button_dark"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16sp"
+        android:drawableTint="@color/white"
+        android:text="@string/aprende_certificacion" />
+
+</LinearLayout>

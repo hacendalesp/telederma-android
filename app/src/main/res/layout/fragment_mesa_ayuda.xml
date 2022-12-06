@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16sp"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    tools:contexto="com.telederma.gov.co.fragments.MesaAyudaFragment">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="32sp"
+        android:src="@drawable/logo_color" />
+
+    <TextView
+        style="@style/telederma_text_view_formulario_blue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24sp"
+        android:text="@string/acerca_de_correo_label" />
+
+    <Button
+        android:id="@+id/btn_enviar"
+        style="@style/telederma_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16sp"
+        android:drawableRight="@drawable/ic_send"
+        android:drawableTint="@color/white"
+        android:text="@string/acerca_de_enviar" />
+
+    <TextView
+        style="@style/telederma_text_view_formulario_blue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24sp"
+        android:text="@string/acerca_de_historial_ticket" />
+
+    <Button
+        android:id="@+id/btn_historial_tickets"
+        style="@style/telederma_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16sp"
+        android:text="@string/acerca_de_txt_btn_historial_ticket" />
+
+    <TextView
+        style="@style/telederma_text_view_formulario_blue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24sp"
+        android:layout_marginBottom="16sp"
+        android:text="@string/acerca_de_telefono_label" />
+
+    <TextView
+        style="@style/telederma_text_view_formulario_gray"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/acerca_de_telefono" />
+
+    <TextView
+        style="@style/telederma_text_view_formulario_gray"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/acerca_de_correo" />
+
+</LinearLayout>

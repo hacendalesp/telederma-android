@@ -1,0 +1,802 @@
+<resources>
+    <string name="app_name">Telederma</string>
+    <string name="campo_requerido">Campo requerido</string>
+    <string name="msj_error">Ha ocurrido un error</string>
+    <string name="msj_error_timeout">Tiempo de espera agotado</string>
+    <string name="msj_campos_requeridos">Verifique los campos requeridos</string>
+    <string name="msj_sin_conexion">Sin conexión :(</string>
+    <string name="msj_con_conexion">Conectado!</string>
+    <string name="msj_espera">Espere un momento...</string>
+    <string name="msj_aceptar_terminos">Debe aceptar los términos y condiciones</string>
+    <string name="msj_error_timeout_reintentando">Sin respuesta, reintentando...</string>
+    <string name="msj_la_consulta_se_enviara_tan_pronto_exista_conexion">La consulta se enviará tan pronto exista conexión a internet</string>
+    <string name="compartido">Compartido</string>
+    <string name="control">Control</string>
+    <string name="consulta_medica">Consulta médica</string>
+    <string name="consulta_enfermeria">Consulta enfermería</string>
+    <string name="control_medico">Control médico</string>
+    <string name="control_enfermeria">Control enfermería</string>
+    <string name="empezar">Empezar</string>
+    <string name="siguiente">Siguiente</string>
+
+    <string name="TAG_REQUERIDO">REQUERIDO</string>
+
+    <string name="navigation_drawer_open">Abrir menú</string>
+    <string name="navigation_drawer_close">Cerrar menú</string>
+
+    <string name="action_settings">Configuración</string>
+
+    <string name="action_consultas">Consultas</string>
+    <string name="action_nueva_consulta">Nueva consulta</string>
+    <string name="action_pacientes">Pacientes</string>
+    <string name="action_aprende">Aprende</string>
+    <string name="action_gestion">Gestión</string>
+    <string name="action_mi_perfil">Mi perfil</string>
+    <string name="action_acerca_de">Acerca de Telederma</string>
+    <string name="action_creditos">Créditos</string>
+    <string name="action_salir">Salir</string>
+
+    <string name="label_usuario">* Usuario</string>
+    <string name="label_confirmar_documento">* Confirmar número de identificación</string>
+    <string name="label_current_password">* Contraseña actual</string>
+    <string name="message_change_password"> Sino quieres cambiar de contraseña, dejar en blanco los siguientes campos:</string>
+    <string name="change_password">Cambiar contraseña </string>
+    <string name="label_new_password">* Nueva Contraseña </string>
+    <string name="label_contrasena">* Contraseña</string>
+    <string name="label_seleccionar">Seleccionar</string>
+    <string name="label_sin_controles">Sin controles</string>
+    <string name="label_nombre">Nombre</string>
+    <string name="label_celular">* Teléfono de contacto</string>
+    <string name="label_correo">* Correo</string>
+    <string name="label_tipo_profesional">* Tipo profesional</string>
+    <string name="label_tarjeta_profesional">* Tarjeta profesional</string>
+    <string name="label_nombre_s">* Nombre(s)</string>
+    <string name="label_apellido_s">* Apellido(s)</string>
+    <string name="label_confirmar_contrasena">* Confirmar contraseña</string>
+    <string name="label_confirm_new_password">* Confirmar nueva contraseña</string>
+    <string name="label_enviar">Enviar</string>
+    <string name="label_codigo">Código</string>
+    <string name="label_firmar">Firmar</string>
+    <string name="label_confirmar">Confirmar</string>
+    <string name="label_cancelar">Cancelar</string>
+    <string name="label_borrar">Borrar</string>
+    <string name="label_no_aplica">N/A</string>
+
+    <string name="detalle_consulta_label_nombre">Nombre: </string>
+    <string name="detalle_consulta_label_edad">Edad: </string>
+    <string name="detalle_consulta_label_documento">Documento: </string>
+    <string name="detalle_consulta_label_fecha">Fecha: </string>
+
+    <string name="login_bienvenido">Bienvenido</string>
+    <string name="login_cedula_hint">Ingrese su número de cédula</string>
+    <string name="current_password_hint">Ingrese su contraseña actual</string>
+    <string name="login_contrasena_hint">Ingrese su contraseña</string>
+    <string name="login_new_password_hint">Ingrese su nueva contraseña</string>
+    <string name="login_confirm_new_password_hint">Confirme su nueva contraseña</string>
+    <string name="login_olvide_contrasena">Olvidé mi contraseña</string>
+    <string name="login_ingresar">Ingresar</string>
+    <string name="login_soy_nuevo_title">Soy nuevo</string>
+
+    <string name="soy_nuevo_usuario_hint">Ingrese el número de identificación</string>
+    <string name="soy_nuevo_tarjeta_profesional_hint">Número de la tarjeta profesional</string>
+    <string name="soy_nuevo_nombre_hint">Ingrese su nombre</string>
+    <string name="soy_nuevo_apellido_hint">Ingrese su apellido</string>
+    <string name="soy_nuevo_celular_hint">Ingrese número de contacto</string>
+    <string name="soy_nuevo_correo_hint">Ingrese su correo electrónico</string>
+    <string name="soy_nuevo_confirmar_contrasena_hint">Confirme su contraseña</string>
+    <string name="soy_nuevo_aceptar_terminos">* He leído y acepto los términos y condiciones,
+        incluyendo el tratamiento de mis datos personales</string>
+    <string name="soy_nuevo_ver_terminos">Ver política de datos y términos y condiciones</string>
+    <string name="soy_nuevo_registrarme">Registrarme</string>
+    <string name="soy_nuevo_firma_title">Por favor realizar la firma en la pantalla del celular</string>
+    <string name="soy_nuevo_firma_msj_requerido">Debe agregar su firma</string>
+    <string name="soy_nuevo_msj_confirmar_documento">Confirmación de documento no coincide</string>
+    <string name="soy_nuevo_msj_confirmar_contrasena">Confirmación de contraseña no coincide</string>
+    <string name="soy_nuevo_msj_email_invalido">Verifique su email</string>
+    <string name="soy_nuevo_msj_contrasena_invalido">Verifique su contraseña</string>
+    <string name="soy_nuevo_msj_reglas_contrasena">Mínimo 6 caracteres</string>
+    <!--<string name="soy_nuevo_msj_reglas_contrasena">Mínimo 8 caracteres: 1 minúscula, 1 mayúscula y 1 número</string>-->
+
+    <string name="mi_perfil_title">Editar perfil</string>
+    <string name="mi_perfil_usuario">Usuario</string>
+    <string name="mi_perfil_nombre">Nombre(s)</string>
+    <string name="mi_perfil_nombre_hint">Ingrese su nombre</string>
+    <string name="mi_perfil_apellido">Apellido(s)</string>
+    <string name="mi_perfil_apellido_hint">Ingrese su apellido</string>
+    <string name="mi_perfil_celular">Teléfono de contacto</string>
+    <string name="mi_perfil_celular_hint">Ingrese su número de contacto</string>
+    <string name="mi_perfil_correo">Correo</string>
+    <string name="mi_perfil_correo_hint">Ingrese su correo electrónico</string>
+    <string name="mi_perfil_firma">Firma</string>
+    <string name="mi_perfil_firma_error">Error descargando firma</string>
+    <string name="mi_perfil_guardar_cambios">Guardar cambios</string>
+    <string name="mi_perfil_progreso_descargar">Descargando imagen</string>
+
+    <string name="contrasena_enviar_codigo">Enviar código a su correo</string>
+    <string name="contrasena_codigo_hint">Ingrese el código del SMS</string>
+    <string name="contrasena_nueva_contrasena_hint">Ingrese su nueva contraseña</string>
+    <string name="contrasena_confirmar_nueva_contrasena_hint">Confirme su nueva contraseña</string>
+    <string name="contrasena_recuperar_title">Recuperar contraseña</string>
+    <string name="contrasena_recuperar_contacto_1">No ha podido recuperar su contraseña o ingresar</string>
+    <string name="contrasena_recuperar_contacto_2">Por favor comuníquese con nosotros a la línea telefónica
+        (571) 3077072 Bogotá o al correo electrónico telederma@dermatología.gov.co</string>
+
+    <string name="msj_inicio_sesion_bienvenido">Bienvenido</string>
+    <string name="msj_inicio_sesion_no_encuentra_usuario">No se encuentra el usuario ingresado</string>
+    <string name="msj_nuevo_usuario_existe">El documento ya se encuentra registrado para otro usuario</string>
+    <string name="msj_nuevo_usuario_exito">Usuario registrado con éxito</string>
+
+    <string name="nueva_consulta_buscar_paciente">Nueva consulta</string>
+    <string name="nueva_consulta_paciente">Paciente</string>
+    <string name="nueva_consulta_head">Información paciente</string>
+    <string name="nueva_consulta_buscar">Buscar</string>
+    <string name="nueva_consulta_ingresa_numero_documento">Ingresa número de documento</string>
+    <string name="nueva_consulta_estas_seguro_documento_vacio">¿Estas seguro de continuar con el campo número de documento vacío?</string>
+    <string name="nueva_consulta_estas_seguro_documento_vacio_descripcion">Este campo no será editable y los únicos tipos de documento que podrás seleccionar serán: \n (AS) Adulto sin identificar \n (MS) Menor sin identificar</string>
+    <string name="nueva_consulta_buscar_resultados">Resultados de búsqueda</string>
+    <string name="nueva_consulta_head_paciente">Paciente</string>
+    <string name="nueva_consulta_head_fecha">Fecha</string>
+    <string name="nueva_consulta_head_estado">Estado</string>
+    <string name="nueva_consulta_response_search">No hay resultados</string>
+    <string name="nueva_consulta_nombre_parte_hint">Ingrese la ubicación de la lesión</string>
+    <string name="nueva_consulta_continuar">Continuar</string>
+    <string name="nueva_consulta_continuar_sin_imagenes">Omitir</string>
+
+    <string name="ver_paciente_consentimiento_informado">Paciente firmó consentimiento informado</string>
+    <string name="ver_paciente_tipo_identificacion">Tipo identificación</string>
+    <string name="ver_paciente_asegurador">Asegurador</string>
+    <string name="ver_paciente_numero_identificacion">Número de identificación</string>
+    <string name="ver_paciente_estado_civil">Estado civil</string>
+    <string name="ver_paciente_edad">Edad</string>
+    <string name="ver_paciente_fecha_nacimiento">Fecha de nacimiento</string>
+    <string name="ver_paciente_sexo">Sexo</string>
+    <string name="ver_paciente_ocupacion">Ocupación</string>
+    <string name="ver_paciente_celular">Celular</string>
+    <string name="ver_paciente_email">Email</string>
+    <string name="ver_paciente_direccion_domicilio">Dirección de domicilio</string>
+    <string name="ver_paciente_departamento">Departamento</string>
+    <string name="ver_paciente_municipio">Municipio</string>
+    <string name="ver_paciente_zona_de_residencia">Zona de residencia</string>
+    <string name="ver_paciente_persona_acompanante">Persona acompañante</string>
+    <string name="ver_paciente_persona_acompanante_nombre">Nombre</string>
+    <string name="ver_paciente_persona_acompanante_celular">Celular</string>
+    <string name="ver_paciente_persona_responsable">Persona responsable</string>
+    <string name="ver_paciente_persona_responsable_nombre">Nombre</string>
+    <string name="ver_paciente_tipo_usuario">Tipo de usuario</string>
+    <string name="ver_paciente_numero_autorizacion">Número de autorización</string>
+    <string name="ver_paciente_finalidad_consulta">Finalidad de la consulta</string>
+    <string name="ver_paciente_causa_externa">Causa externa</string>
+    <string name="ver_paciente_parentesco">Parentesco</string>
+    <string name="ver_paciente_condicion">Condición</string>
+
+    <string name="nueva_consulta_registro_paso1">Paso 1</string>
+    <string name="nueva_consulta_registro_consentimiento_informado">*Paciente firmó consentimiento informado</string>
+    <string name="nueva_consulta_registro_tipo_identificacion">*Tipo identificación</string>
+    <string name="nueva_consulta_registro_asegurador">*Asegurador</string>
+    <string name="nueva_consulta_registro_tipo_no_tiene">No tiene documento</string>
+    <string name="nueva_consulta_registro_numero_identificacion">*Número de identificación</string>
+    <string name="nueva_consulta_registro_primer_apellido">*Primer apellido</string>
+    <string name="nueva_consulta_registro_segundo_apellido">Segundo apellido</string>
+    <string name="nueva_consulta_registro_primer_nombre">*Primer nombre</string>
+    <string name="nueva_consulta_registro_segundo_nombre">Segundo nombre</string>
+    <string name="nueva_consulta_registro_estado_civil">*Estado civil</string>
+    <string name="nueva_consulta_registro_edad">*Edad</string>
+    <string name="nueva_consulta_registro_unidad_medida">*Unidad de medida</string>
+    <string name="nueva_consulta_registro_fecha_nacimiento">Fecha de nacimiento</string>
+    <string name="nueva_consulta_registro_sexo">*Sexo</string>
+    <string name="nueva_consulta_registro_sexo_femenino">Femenino</string>
+    <string name="nueva_consulta_registro_sexo_masculino">Masculino</string>
+    <string name="nueva_consulta_registro_ocupacion">Ocupación</string>
+    <string name="nueva_consulta_registro_celular">Celular</string>
+    <string name="nueva_consulta_registro_email">Email</string>
+    <string name="nueva_consulta_registro_direccion_domicilio">Dirección de domicilio</string>
+    <string name="nueva_consulta_registro_departamento">*Departamento</string>
+    <string name="nueva_consulta_registro_municipio">*Municipio</string>
+    <string name="nueva_consulta_registro_zona_de_residencia">*Zona de residencia</string>
+    <string name="nueva_consulta_registro_zona_de_residencia_urbana">Urbana</string>
+    <string name="nueva_consulta_registro_zona_de_residencia_rural">Rural</string>
+    <string name="nueva_consulta_registro_persona_acompanante">Persona acompañante</string>
+    <string name="nueva_consulta_registro_persona_acompanante_si">Si</string>
+    <string name="nueva_consulta_registro_persona_acompanante_no">No</string>
+    <string name="nueva_consulta_registro_persona_acompanante_nombre">Nombre</string>
+    <string name="nueva_consulta_registro_persona_acompanante_celular">Celular</string>
+    <string name="nueva_consulta_registro_persona_responsable">Persona responsable</string>
+    <string name="nueva_consulta_registro_persona_responsable_nombre">Nombre</string>
+    <string name="nueva_consulta_registro_tipo_usuario">*Tipo de usuario</string>
+    <string name="nueva_consulta_registro_numero_autorizacion">Número de autorización</string>
+    <string name="nueva_consulta_registro_finalidad_consulta">*Finalidad de la consulta</string>
+    <string name="nueva_consulta_registro_causa_externa">*Causa externa</string>
+    <string name="nueva_consulta_registro_ingrese_numero_identificacion">Ingrese el número de identificación</string>
+    <string name="nueva_consulta_registro_ingrese_primer_apellido">Ingrese el primer apellido</string>
+    <string name="nueva_consulta_registro_ingrese_segundo_apellido">Ingrese el segundo apellido</string>
+    <string name="nueva_consulta_registro_ingrese_primer_nombre">Ingrese el primer nombre</string>
+    <string name="nueva_consulta_registro_ingrese_segundo_nombre">Ingrese el segundo nombre</string>
+    <string name="nueva_consulta_registro_ingrese_ocupacion">Ingrese ocupación</string>
+    <string name="nueva_consulta_registro_ingrese_edad">Ingrese edad</string>
+    <string name="nueva_consulta_registro_ingrese_fecha_nacimietno">dd/mm/aa</string>
+    <string name="nueva_consulta_registro_ingrese_celular">Ingrese el celular</string>
+    <string name="nueva_consulta_registro_ingrese_email">Ingrese el correo electrónico</string>
+    <string name="nueva_consulta_registro_ingrese_direccion_domicilio">Ingrese dirección domicilio</string>
+    <string name="nueva_consulta_registro_ingrese_nombre_acompanante">Ingrese nombre del acompañante</string>
+    <string name="nueva_consulta_registro_ingrese_celular_acompanante">Ingrese celular del acompañante</string>
+    <string name="nueva_consulta_registro_ingrese_nombre_responsable">Ingrese nombre del responsable</string>
+    <string name="nueva_consulta_registro_ingrese_celular_responsable">Ingrese nombre del responsable</string>
+    <string name="nueva_consulta_registro_ingrese_numero_autorizacion">Ingrese el número autorización \n si fue expedido por el asegurador</string>
+    <string name="nueva_consulta_registro_parentesco">Parentesco</string>
+    <string name="nueva_consulta_registro_ingrese_parentesco">Ingrese el parentesco</string>
+    <string name="nueva_consulta_registro_condicion">Condición</string>
+    <string name="nueva_consulta_registro_validacion_numero_identificacion">Número de identificación  no puede ser superior a 16 ni inferiror a 5 caracteres</string>
+    <string name="nueva_consulta_registro_validacion_numero_nombre">El nombre debe tener máximo 20 caracteres</string>
+    <string name="nueva_consulta_registro_validacion_numero_telefono">El número de teléfono mínimo debe tener 7 caracteres</string>
+    <string name="nueva_consulta_registro_validacion_numero_inpec">El número de INPEC debe tener 6 caracteres</string>
+    <string name="nueva_consulta_registro_validacion_edad">La edad no puede superar los 4 dígitos</string>
+    <string name="nueva_consulta_registro_numero_inpec">*Número INPEC</string>
+    <string name="nueva_consulta_registro_ingrese_numero_inpec">Ingrese número INPEC</string>
+    <string name="nueva_consulta_registro_validar">Se permite maximo 20 caracteres</string>
+
+
+    <string name="nueva_consulta_registro_paso2">Paso 2</string>
+    <string name="nueva_consulta_registro_consulta_anamnesis">Anamnesis</string>
+    <string name="nueva_consulta_registro_peso">*Peso en (KG)</string>
+    <string name="nueva_consulta_registro_consulta_tiempo">*Tiempo</string>
+    <string name="nueva_consulta_registro_consulta_tiempo_unidad_medida">*Unidad de medida</string>
+    <string name="nueva_consulta_registro_consulta_numero_de_lesiones_iniciales">*Número de lesiones iniciales </string>
+    <string name="nueva_consulta_registro_consulta_mptivo_de_consulta">*Motivo de consulta </string>
+    <string name="nueva_consulta_registro_consulta_enfermedad_actual">*Enfermedad actual </string>
+    <string name="nueva_consulta_registro_consulta_evolucion_de_lesiones">*Evolución de las lesiones </string>
+    <string name="nueva_consulta_registro_consulta_tiempo_evolucion">*Tiempo de evolución</string>
+    <string name="nueva_consulta_registro_consulta_cambios_evidentes">Cambios evidentes (si aplica)</string>
+    <string name="nueva_consulta_registro_consulta_sangran">Sangran</string>
+    <string name="nueva_consulta_registro_consulta_exudan">Exudan</string>
+    <string name="nueva_consulta_registro_consulta_supuran">Supuran</string>
+    <string name="nueva_consulta_registro_consulta_manejo_preventivo">Manejo preventivo</string>
+    <string name="nueva_consulta_registro_consulta_respuesta_tratamiento">Respuesta a tratamiento </string>
+    <string name="nueva_consulta_registro_consulta_respuesta_tratamiento_mejoria">Mejoría</string>
+    <string name="nueva_consulta_registro_consulta_respuesta_tratamiento_no_mejoria">No mejoría </string>
+    <string name="nueva_consulta_registro_consulta_sintomas">*Síntomas </string>
+    <string name="nueva_consulta_registro_consulta_sintomas_prurito">Prurito</string>
+    <string name="nueva_consulta_registro_consulta_sintomas_ardor">Ardor</string>
+    <string name="nueva_consulta_registro_consulta_sintomas_dolor">Dolor</string>
+    <string name="nueva_consulta_registro_consulta_sintomas_cambian">Los síntomas cambian a lo largo del día</string>
+    <string name="nueva_consulta_registro_consulta_sintomas_empeoran">Se empeoran</string>
+    <string name="nueva_consulta_registro_consulta_sintomas_empeoran_dia">Si, y empeoran en el Día</string>
+    <string name="nueva_consulta_registro_consulta_sintomas_empeoran_noche">Si, y empeoran en la Noche</string>
+    <string name="nueva_consulta_registro_consulta_sintomas_empeoran_ninguno">No</string>
+    <string name="nueva_consulta_registro_consulta_otros_factores">Otros factores que agravan\nlos síntomas</string>
+    <string name="nueva_consulta_registro_consulta_antecedentes">Antecedentes</string>
+    <string name="nueva_consulta_registro_consulta_antecedentes_personles">Personales</string>
+    <string name="nueva_consulta_registro_consulta_antecedentes_familiares">Familiares </string>
+    <string name="nueva_consulta_registro_consulta_antecedentes_farmacologicos">Farmacológicos</string>
+    <string name="nueva_consulta_registro_consulta_antecedentes_quirurgicos">Quirúrgicos</string>
+    <string name="nueva_consulta_registro_consulta_tratamiento_recibido">Tratamiento recibido</string>
+    <string name="nueva_consulta_registro_consulta_sustancias">Otras sustancias aplicadas</string>
+    <string name="nueva_consulta_registro_consulta_efecto_tratamiento">Efectos del tratamiento recibido</string>
+    <string name="nueva_consulta_registro_consulta_impresion_diagnostica">*Impresión diagnóstica</string>
+    <string name="nueva_consulta_registro_consulta_ingrese_peso">Peso en (kg)</string>
+    <string name="nueva_consulta_registro_consulta_ingrese_tiempo">Ingrese el tiempo</string>
+    <string name="nueva_consulta_registro_consulta_ingrese_factores">Ingrese los factores agravantes</string>
+    <string name="nueva_consulta_registro_consulta_ingrese_antecedentes_personales">Ingrese antecedentes de tipo: Médicos, Quirúrgicos, Tóxicos, Alérgicos, Ginecológicos, Farmacológicos, Otros. </string>
+    <string name="nueva_consulta_registro_consulta_ingrese_antecedentes_familiares">Ingrese antecedentes familiares</string>
+    <string name="nueva_consulta_registro_consulta_ingrese_antecedentes_farmacologico">Ingrese antecedentes farmacológicos</string>
+    <string name="nueva_consulta_registro_consulta_ingrese_antecedentes_quirurgicos">Ingrese antecedentes quirúrgicos</string>
+    <string name="nueva_consulta_registro_consulta_ingrese_tratamientos">Ingrese tratamientos recibidos</string>
+    <string name="nueva_consulta_registro_consulta_ingrese_sustancias">Ingrese sustancias aplicadas</string>
+    <string name="nueva_consulta_registro_consulta_ingrese_efectos">Ingrese los efectos del tratamiento</string>
+    <string name="nueva_consulta_registro_consulta_ingrese_impresion">Ingrese impresión diagnóstica</string>
+    <string name="nueva_consulta_registro_consulta_ingrese_email">Verifique el email</string>
+    <string name="nueva_consulta_registro_consulta_validar_aseguradora">La aseguradora debe ser seleccionada de la lista o no colocar un valor</string>
+    <string name="nueva_consulta_registro_consulta_validar_evolucion">Debe seleccionar por lo menos una evolución</string>
+    <string name="nueva_consulta_registro_consulta_validar_empeoran">Debe seleccionar una opción</string>
+    <string name="nueva_consulta_registro_consulta_anadir_lesion">Añadir lesión</string>
+
+
+    <string name="nueva_consulta_registro_paso3">Paso 3</string>
+    <string name="nueva_consulta_registro_paso4">Paso 4</string>
+    <string name="nueva_consulta_registro_paso5">Paso 5</string>
+    <string name="nueva_consulta_title_paso1">Datos paciente</string>
+    <string name="nueva_consulta_title_paso2">Historia clínica</string>
+    <string name="nueva_consulta_title_paso3">Examen físico</string>
+    <string name="nueva_consulta_title_paso4">Tomar imágenes</string>
+    <string name="nueva_consulta_title_paso4_">Imágenes</string>
+    <string name="nueva_consulta_title_paso5">Anexos</string>
+    <string name="nuevo_ontrol_title_datos_control">Datos control</string>
+    <string name="nuevo_ontrol_title_imagenes">Imágenes</string>
+    <string name="nuevo_requerimiento_title_historia_clinica">Historia clínica</string>
+    <string name="nuevo_requerimiento_title_imagenes">Imágenes</string>
+    <string name="nueva_consulta_registro_resumen">Resumen</string>
+    <string name="nueva_consulta_registro_resumen_titulo">Terminación de consulta</string>
+    <string name="nuevo_control_registro_resumen_titulo">Terminación de control</string>
+    <string name="nuevao_requerimiento_registro_resumen_titulo">Terminación de requerimiento</string>
+    <string name="nueva_consulta_registro_imagenes_validacion">Debe seleccionar por lo menos %s imágenes</string>
+    <string name="nueva_consulta_registro_consulta_si">Si </string>
+    <string name="nueva_consulta_registro_consulta_no">No </string>
+    <string name="nueva_consulta_registro_consulta_siguiente">Siguiente </string>
+    <string name="nueva_consulta_registro_consulta_guardar">Guardar </string>
+    <string name="nueva_consulta_registro_consulta_resumen">Guardar e ir a Resumen </string>
+    <string name="nueva_consulta_registro_consulta_seleccione">Seleccione </string>
+
+    <string name="msj_nueva_consulta_buscar_consulta">No hay resultados</string>
+    <string name="nueva_consulta_nuevo_paciente">Nuevo paciente</string>
+
+
+    <string name="lista_consultas_tab_resueltas_title">Resueltas</string>
+    <string name="lista_consultas_tab_pendientes_title">Pendientes</string>
+    <string name="lista_consultas_tab_archivadas_title">Archivadas</string>
+
+    <string name="lista_consultas_tab_resueltas_archivar_men1">Las consultas en estado en Requerimiento no pueden ser archivadas</string>
+    <string name="lista_consultas_tab_resueltas_archivar_men2">Ha sido archivado. Las consultas en estado en Requerimiento no pueden ser archivadas</string>
+
+    <string name="detalle_consulta_historia_clinica_title">Historia\nclínica</string>
+    <string name="detalle_consulta_imagenes_title">Imágenes</string>
+    <string name="detalle_consulta_respuesta_title">Respuesta</string>
+    <string name="detalle_consulta_historial_title">Historial</string>
+    <string name="detalle_consulta_nuevo_control">Nuevo control</string>
+
+    <string name="detalle_consulta_controles">Controles:</string>
+    <string name="detalle_consulta_historia_paciente">Historia clínica del paciente:</string>
+    <string name="detalle_consulta_peso">Peso en (KG):</string>
+    <string name="detalle_consulta_motivo_consulta2">Motivo de consulta:</string>
+    <string name="detalle_consulta_enfermedad_actual">Enfermedad actual:</string>
+    <string name="detalle_consulta_tiempo_evolucion">Tiempo de evolución:</string>
+    <string name="detalle_consulta_nro_lesiones_iniciales">Número de lesiones iniciales:</string>
+    <string name="detalle_consulta_evolucion_lesiones">Evolución de las lesiones:</string>
+    <string name="detalle_consulta_cambios_evidentes">Cambios evidentes:</string>
+    <string name="detalle_consulta_sangran">Sangran:</string>
+    <string name="detalle_consulta_exudan">Exudan:</string>
+    <string name="detalle_consulta_supuran">Supuran:</string>
+    <string name="detalle_consulta_sintomas">Síntomas:</string>
+    <string name="detalle_consulta_sintomas_cambian_dia">Los síntomas cambian a lo largo del día:</string>
+    <string name="detalle_consulta_otros_factores_agravan_sintomas">Otros factores que agravan los síntomas:</string>
+    <string name="detalle_consulta_antecedentes_relevantes">Antecedentes relevantes:</string>
+    <string name="detalle_consulta_otras_sustancias_aplicadas">Otras sustancias aplicadas:</string>
+    <string name="detalle_consulta_tratamiento_recibido">Tratamiento recibido:</string>
+    <string name="detalle_consulta_efectos_tratamiento">Efectos del tratamiento recibido:</string>
+    <string name="detalle_consulta_examen_fisico">Examen físico:</string>
+    <string name="detalle_consulta_anexos">Anexos:</string>
+    <string name="detalle_consulta_impresion_diagnostica">Impresión diagnóstica:</string>
+    <string name="detalle_consulta_especialista">Especialista:</string>
+    <string name="detalle_consulta_nro_registro">Tarjeta profesional:</string>
+    <string name="detalle_consulta_fecha">Fecha:</string>
+    <string name="detalle_consulta_hora">Hora:</string>
+    <string name="detalle_consulta_diagnostico">Diagnóstico</string>
+    <string name="detalle_consulta_diagnostico_principal">Diagnóstico Principal</string>
+    <string name="detalle_consulta_diagnostico_relacionado">Diagnóstico Relacionado</string>
+    <string name="detalle_consulta_diagnostico_tipo">2:</string>
+    <string name="detalle_consulta_diagnostico_enfermedad">1:</string>
+    <string name="detalle_consulta_tratamiento">Recomendaciones de manejo</string>
+    <string name="detalle_consulta_solicitud_examenes">Solicitud de exámenes</string>
+    <string name="detalle_consulta_formulacion">Formulación</string>
+    <string name="detalle_consulta_ver_formula">Ver fórmula</string>
+    <string name="detalle_consulta_mipres">Mipres</string>
+    <string name="detalle_consulta_ver_mipres">Ver Mipres</string>
+    <string name="detalle_consulta_proximo_control">Próximo control</string>
+    <string name="detalle_consulta_imprimir_respuesta">Imprimir respuesta</string>
+    <string name="detalle_consulta_requerimientos">Requerimientos</string>
+    <string name="detalle_consulta_tipo_requerimiento">Tipo de requerimiento:</string>
+    <string name="detalle_consulta_descartar_requerimiento">Descartar requerimiento</string>
+    <string name="detalle_consulta_resolver">Resolver</string>
+    <string name="detalle_consulta_descripcion_lesion">Análisis de la lesión:</string>
+    <string name="detalle_consulta_analisis_caso">Análisis del caso</string>
+    <string name="item_requirement_label_desc">Descripción:</string>
+    <string name="item_requirement_label_date">Fecha:</string>
+    <string name="item_requirement_label_response">Respuesta Especialista:</string>
+
+
+    <string name="anexos">Ingrese los anexos relevantes \n  (laboratorio clínico o patología) \n de forma escrita por foto o nota de voz \n El limite de grabación de audio es de dos minutos</string>
+    <string name="examen_fisico">Describa signos vitales, tipo de lesión,  \n distribución y localización de \n forma escrita o nota de voz \n El limite de grabación de audio es de dos minutos</string>
+    <string name="examen_fisico_text">Examen físico</string>
+    <string name="motivo_de_consulta_text">Motivo de consulta</string>
+    <string name="fotos_patologia">Tomar imágenes</string>
+
+    <string name="consultas_bandeja_vacía">Bandeja vacía</string>
+    <string name="consultas_actualizar">\u2193 Deslice hacia abajo para actualizar la bandeja \u2193</string>
+    <string name="consultas_compartir">Compartir</string>
+    <string name="consultas_controles">Controles:</string>
+    <string name="consultas_nueva_consulta">Nueva consulta</string>
+    <string name="consultas_nueva_consulta_agregar">Agregar</string>
+    <string name="consultas_nueva_consulta_consulta">Consulta</string>
+    <string name="consultas_nuevo_paciente">Nuevo paciente</string>
+    <string name="consultas_buscar_paciente">Buscar paciente</string>
+    <string name="consultas_compartir_consulta">Compartir consulta a paciente</string>
+    <string name="consultas_pendiente_diagnostico">Pendiente de diagnóstico</string>
+
+    <string name="estado_consulta_0">Sin enviar</string>
+    <string name="estado_consulta_1">Resuelto</string>
+    <string name="estado_consulta_2">Requerimiento</string>
+    <string name="estado_consulta_3">Pendiente</string>
+    <string name="estado_consulta_4">Archivado</string>
+    <string name="estado_consulta_5">Proceso</string>
+    <string name="estado_consulta_6">Sin créditos</string>
+    <string name="estado_consulta_7">Remisión</string>
+    <string name="estado_consulta_8">Evaluando</string>
+    <!--<string name="estado_consulta_menos_1">Creando</string>-->
+
+
+    <string name="valor_booleano_true">Si</string>
+    <string name="valor_booleano_false">No</string>
+
+    <string name="reproductor_audio_progreso_descargar">Descargando audio...</string>
+    <string name="reproductor_audio_descarga_fallida">Descarga fallida</string>
+
+
+    <string name="consulta_control">Añadir control</string>
+    <string name="consulta_control_hizo_el_tratamiento">Hizo el tratamiento y siguió las indicaciones</string>
+    <string name="consulta_control_mejora">Mejoría subjetiva</string>
+    <string name="consulta_control_tolero_medicamentos">Toleró los medicamentos</string>
+    <string name="consulta_control_guargar">Siguiente</string>
+    <string name="consulta_sin_respuesta">Sin respuesta</string>
+    <string name="ver_mas">Ver más</string>
+    <string name="consulta_control_imagenes">Capturar imágenes</string>
+    <string name="consulta_requerimiento_historia">Historia clínica</string>
+    <string name="consulta_requerimiento_imagenes">Tomar imágenes</string>
+    <string name="consulta_requerimiento_confirmar">Confirmar</string>
+    <string name="consulta_requerimiento_capturar">Capturar</string>
+    <string name="consulta_requerimiento_texto">Ingrese la respuesta al requerimiento de forma escrita o nota de voz \n El limite de grabación de audio es de dos minutos</string>
+    <string name="consulta_requerimiento">Resolver requerimiento</string>
+    <string name="consulta_requerimiento_tomar_imagenes">Tomar Imágenes</string>
+
+    <string name="dialog_descartar_req_advertencia">Advertencia</string>
+    <string name="dialog_descartar_req_motivo">Seleccione el motivo por el que desea descartar esta consulta</string>
+    <string name="dialog_descartar_req_radio_1">El paciente no regresó</string>
+    <string name="dialog_descartar_req_radio_2">El paciente está sano</string>
+    <string name="dialog_descartar_req_radio_3">No fue posible resolver la solicitud</string>
+    <string name="dialog_descartar_req_otro">Otro</string>
+    <string name="dialog_descartar_req_hint_otro">Ingrese motivo</string>
+    <string name="dialog_descartar_req_descartar">Descartar requerimiento</string>
+
+    <string name="dialog_ver_formula_cod_medicamento">Código del medicamento</string>
+    <string name="dialog_ver_formula_tipo_medicamento">Tipo de medicamento</string>
+    <string name="dialog_ver_formula_medicamento_generico">Nombre genérico del medicamento</string>
+    <string name="dialog_ver_formula_forma_farmaceutica">Forma farmacéutica</string>
+    <string name="dialog_ver_formula_concentracion">Concentración del medicamento</string>
+    <string name="dialog_ver_formula_unidad_medida">Unidad de medida del medicamento</string>
+    <string name="dialog_ver_formula_nro_unidades">Número de unidades</string>
+    <string name="dialog_ver_formula_comentarios">Descripción</string>
+
+    <string name="dialog_pdf_archivo_progreso_descargar">Descargando mipres...</string>
+
+    <string name="dialog_ver_firma_msj_autorizacion">Mensaje de autorización</string>
+    <string name="dialog_ver_firma_enviar">Enviar y seguir</string>
+
+
+    <string name="dialog_terminos_condiciones_title">Política de datos y términos y condiciones</string>
+
+    <string name="acerca_de_telefono_label">Datos de contacto</string>
+    <string name="acerca_de_telefono">Teléfono: (571) 3077072 Bogotá</string>
+    <string name="acerca_de_llamar">Llamar</string>
+    <string name="acerca_de_head_table_ticket">Ticket</string>
+    <string name="acerca_de_head_table_asunto">Asunto</string>
+    <string name="acerca_de_head_table_estado">Estado</string>
+    <string name="acerca_de_correo_label">Enviar ticket</string>
+    <string name="acerca_de_adjuntar_foto">Adjuntar foto</string>
+    <string name="acerca_de_tomar_foto">Tomar foto</string>
+    <string name="acerca_de_seleccionar_archivo">Seleccionar archivo</string>
+
+    <string name="acerca_de_dialog_asunto">Asunto</string>
+    <string name="acerca_de_dialog_descripcion">Descripción</string>
+    <string name="acerca_de_dialog_imagen">Imagen</string>
+    <string name="acerca_de_dialog_respuesta">Respuesta</string>
+    <string name="acerca_de_dialog_imagen_respuesta">Imagen</string>
+    <string name="acerca_de_mensaje">Se ha guardado exitosamente !</string>
+
+
+    <string name="acerca_de_historial_ticket">Historial Tickets</string>
+    <string name="acerca_de_txt_btn_historial_ticket">Ver Tickets</string>
+    <string name="acerca_de_correo">Correo: telederma@dermatologia.gov.co</string>
+    <string name="acerca_de_enviar">Enviar</string>
+    <string name="acerca_de_preguntas_frecuentes">Preguntas frecuentes</string>
+    <string name="acerca_de_ver">Ver</string>
+    <string name="acerca_de_telederma">
+        Telederma es una marca registrada por la Empresa Social del Estado Centro Dermatológico
+        Federico Lleras Acosta identificado con NIT 800247350-6 y domicilio en la Avenida 1ª No.
+        13 A – 61 de la ciudad de Bogotá, Colombia.
+    </string>
+    <string name="version_app">Versión Telederma: 1.0.0</string>
+
+    <string name="creditos_claudia_marcela">Dra. Claudia Marcela Rojas Daza</string>
+    <string name="creditos_claudia_marcela_info">
+        Directora General\nHospital Universitario Centro Dermatológico Federico Lleras Acosta\nDirectora General Telederma
+    </string>
+    <string name="creditos_xiomara_perea">Dra. Elin Xiomara Perea Flórez</string>
+    <string name="creditos_xiomara_perea_info">
+        Subdirectora Técnico Científica\nHospital Universitario Centro Dermatológico Federico Lleras Acosta\nDirectora Científica Telederma
+    </string>
+    <string name="creditos_camilo_barrera">Dr. Camilo A. Barrera Valencia</string>
+    <string name="creditos_camilo_barrera_info">Asesor Telederma</string>
+    <string name="creditos_brainco">Diseño y Desarrollo de la App:</string>
+    <string name="creditos_brainco_info">BrainCo SAS\nwww.brainco.com.co</string>
+
+    <string name="gestion_editar_perfil">Editar mi perfil</string>
+    <string name="gestion_mesa_ayuda">Mesa de ayuda</string>
+    <string name="gestion_creditos">Créditos</string>
+    <string name="gestion_acerca_de">Acerca de Telederma</string>
+    <string name="gestion_aviso_legal">Aviso legal</string>
+
+    <string name="gestion_creditos_cantidad">Usted tiene 300 créditos disponibles.</string>
+
+    <string name="aprende_que_es_telederma">¿Qué es Telederma?</string>
+    <string name="aprende_manejo_app">Manejo de la App</string>
+    <string name="aprende_toma_imagenes">Toma de imágenes</string>
+    <string name="aprende_semiologia">Semiología cutánea</string>
+    <string name="aprende_toma_biopsia">Toma de biopsia</string>
+    <string name="aprende_consejos">Consejos</string>
+    <string name="aprende_certificacion">Certificación</string>
+
+    <string name="aprende_biopsia_mensaje">Este módulo contiene recursos académicos de video y texto que orientará la toma de
+        biopsia de piel directamente en su institución.</string>
+    <string name="aprende_manejo_app_mensaje">Este módulo contiene recursos de video y texto que orientará el manejo y
+        funcionamiento adecuado de la aplicación.</string>
+    <string name="aprende_biopsia_elipse">Video biopsia elipse</string>
+    <string name="aprende_manual_usuario">Manual de usuario</string>
+    <string name="aprende_video_semiologia">Video semiología cutánea</string>
+    <string name="aprende_video_manejo_app">Video tutorial manejo de la App</string>
+    <string name="aprende_biopsia_sacabocado">Video biopsia sacabocado</string>
+    <string name="aprende_biopsia_instructivo">Instructivo biopsia elipse y sacabocado</string>
+
+    <string name="aprende_semiologia_mensaje">
+        Este módulo contiene recursos académicos de imagen, ilustración y texto de las
+        principales lesiones de piel que orientará la descripción en la anamnesis y examen
+        físico de la historia clínica de la teleconsulta.
+    </string>
+    <string name="aprende_semiologia_creditos_titulo">Créditos:</string>
+    <string name="aprende_semiologia_creditos">
+        Obra derivada del capítulo 3 del libro Dermatología Clínica. Conceptos Básicos. 2013. Hospital Universitario
+        Centro Dermatológico Federico Lleras Acosta E.S.E. ISBN: 978-958-59331-1-8
+    </string>
+    <string name="aprende_semiologia_creditos_autores_titulo">Autores:</string>
+    <string name="aprende_semiologia_creditos_autores">
+        1. Texto: Luisa Fernanda Galindo Díaz, Héctor José Castellanos Lorduy. Adaptación: Sandra Helena Muvdi Arenas.
+        \n2. Imágenes: Sandra Helena Muvdi Arenas, Nathalia Plaza Arteaga y Telederma.
+        \n3. Ilustraciones: BrainCo S.A.S
+    </string>
+    <string name="aprende_semiologia_creditos_brainco_web">www.brainco.com.co</string>
+    <string name="aprende_semiologia_anexos">Anexos cutáneos</string>
+
+    <string name="aprende_certificacion_mensaje">
+        A continuación se presenta un cuestionario sobre los diferentes aspectos del módulo de “Aprende”.
+        La certificación le permitirá cumplir con los requerimientos normativos exigidos por el Ministerio de Salud y
+        Protección Social.
+    </string>
+    <string name="aprende_certificacion_notas">
+        - En total son 10 preguntas de elección múltiple con única respuesta y de falso y verdadero.\n
+        - La certificación se obtiene con el 70% de aprobación.\n
+        - Para registrar sus respuestas debe darle al final del cuestionario “Enviar”.
+        - La certificación será enviada al correo electrónico registrado en Telederma.\n
+    </string>
+    <string name="aprende_certificacion_pregunta_1">
+        1. Lesión que se caracteriza solamente por cambio de color de la piel sin otras alteraciones en la superficie:
+    </string>
+    <string name="aprende_certificacion_pregunta_2">2. La lesión que se observa en la imagen corresponde a:</string>
+    <string name="aprende_certificacion_pregunta_3">
+        3. Solución de continuidad profunda que compromete todas las capas de la piel; siempre deja cicatriz:
+    </string>
+    <string name="aprende_certificacion_pregunta_4">
+        4. ¿Cuál de las siguientes imágenes considera adecuada para ser enviada por teledermatología?
+    </string>
+    <string name="aprende_certificacion_pregunta_5">
+        5. ¿Cuántas imágenes y de qué tipo se recomiendan tomar para ser enviada por teledermatología?
+    </string>
+    <string name="aprende_certificacion_pregunta_6">
+        6. El calibre de sutura recomendada para una biopsia de piel realizada en la cara es:
+    </string>
+    <string name="aprende_certificacion_pregunta_7">
+        7. En biopsia con sacabocado: “Tomar el sacabocados con 3 dedos de la mano dominante y colocarlo de forma perpendicular”.
+    </string>
+    <string name="aprende_certificacion_pregunta_8">
+        8. En biopsia con sacabocado: “Realizar movimiento circular de 180 grados y realizar leve presión sobre la piel para tomar la biopsia”.
+    </string>
+    <string name="aprende_certificacion_pregunta_9">9. ¿Qué es lo primero que debe hacer para una consulta de Telederma?</string>
+    <string name="aprende_certificacion_pregunta_10">
+        10. ¿Qué significan los siguientes estados en la App Telederma?. Dar la respuesta en el orden de visualización (1, 2, 3 y 4)
+    </string>
+    <string name="aprende_certificacion_pregunta_1_respuesta_1">a. Mácula</string>
+    <string name="aprende_certificacion_pregunta_1_respuesta_2">b. Úlcera</string>
+    <string name="aprende_certificacion_pregunta_1_respuesta_3">c. Parche</string>
+    <string name="aprende_certificacion_pregunta_1_respuesta_4">d. Placa</string>
+    <string name="aprende_certificacion_pregunta_2_respuesta_1">a. Mácula</string>
+    <string name="aprende_certificacion_pregunta_2_respuesta_2">b. Úlcera</string>
+    <string name="aprende_certificacion_pregunta_2_respuesta_3">c. Parche</string>
+    <string name="aprende_certificacion_pregunta_2_respuesta_4">d. Placa</string>
+    <string name="aprende_certificacion_pregunta_3_respuesta_1">a. Erosión</string>
+    <string name="aprende_certificacion_pregunta_3_respuesta_2">b. Fisura</string>
+    <string name="aprende_certificacion_pregunta_3_respuesta_3">c. Excoriación</string>
+    <string name="aprende_certificacion_pregunta_3_respuesta_4">d. Úlcera</string>
+    <string name="aprende_certificacion_pregunta_4_respuesta_1">a. </string>
+    <string name="aprende_certificacion_pregunta_4_respuesta_2">b. </string>
+    <string name="aprende_certificacion_pregunta_4_respuesta_3">c. </string>
+    <string name="aprende_certificacion_pregunta_4_respuesta_4">d. </string>
+    <string name="aprende_certificacion_pregunta_5_respuesta_1">a. Tres: 1 imagen de toda el área de la lesión y 2 de detalle de la lesión</string>
+    <string name="aprende_certificacion_pregunta_5_respuesta_2">b. Una: 1 imagen de detalle de la lesión</string>
+    <string name="aprende_certificacion_pregunta_5_respuesta_3">c. Siete: 1 imágenes de toda el área de la lesión y 6 de detalle de la lesión</string>
+    <string name="aprende_certificacion_pregunta_5_respuesta_4">d. Ocho: 2 imágenes de toda el área de la lesión y 6 de detalle de la lesión</string>
+    <string name="aprende_certificacion_pregunta_6_respuesta_1">a. Calibre de sutura 3/0</string>
+    <string name="aprende_certificacion_pregunta_6_respuesta_2">b. Calibre de sutura 5/0 ó 6/0</string>
+    <string name="aprende_certificacion_pregunta_6_respuesta_3">c. Calibre 4/0</string>
+    <string name="aprende_certificacion_pregunta_6_respuesta_4">d. No importa el calibre</string>
+    <string name="aprende_certificacion_pregunta_7_respuesta_1">a. Verdadero</string>
+    <string name="aprende_certificacion_pregunta_7_respuesta_2">b. Falso</string>
+    <string name="aprende_certificacion_pregunta_8_respuesta_1">a. Verdadero</string>
+    <string name="aprende_certificacion_pregunta_8_respuesta_2">b. Falso</string>
+    <string name="aprende_certificacion_pregunta_9_respuesta_1">a. Diligenciar los datos de identificación del paciente</string>
+    <string name="aprende_certificacion_pregunta_9_respuesta_2">b. Explicar y hacer firmar del paciente el consentimiento informado</string>
+    <string name="aprende_certificacion_pregunta_9_respuesta_3">c. Garantizar una buena luz para la toma de las imágenes del paciente</string>
+    <string name="aprende_certificacion_pregunta_9_respuesta_4">d. Asegurarme de tener mi sesión activa en la App de Telederma</string>
+    <string name="aprende_certificacion_pregunta_10_respuesta_1">a. Teleconsulta: 1) Resuelta 2) Respuesta pendiente 3) En proceso 4) Con requerimiento</string>
+    <string name="aprende_certificacion_pregunta_10_respuesta_2">b. Teleconsulta: 1) Resuelta 2) Respuesta pendiente 3) con requerimiento 4) En proceso</string>
+    <string name="aprende_certificacion_pregunta_10_respuesta_3">c. Teleconsulta: 1) Resuelta 2) En proceso 3) Con requerimiento 4) Respuesta pendiente</string>
+    <string name="aprende_certificacion_pregunta_10_respuesta_4">d. Ninguna de las anteriores</string>
+    <string name="aprende_certificacion_enviar">Enviar respuestas</string>
+    <string name="aprende_certificacion_no_certificado">No alcanzó el 70% requerido para certificarse</string>
+
+    <string name="consulta_historial_head_motivo">Motivo consulta</string>
+    <string name="consulta_historial_head_fecha">Fecha</string>
+    <string name="consulta_historial_head_estado">Estado</string>
+
+    <string name="control_medico_mejoria_subjetiva">Mejoría subjetiva</string>
+    <string name="control_medico_hizo_tratamiento">Hizo el tratamiento y siguió las indicaciones</string>
+    <string name="control_medico_tolero_medicamentos">Toleró los medicamentos</string>
+    <string name="control_medico_descripcion_clinica">Descripción clínica</string>
+    <string name="control_medico_examen_fisico">Examen físico</string>
+    <string name="control_medico_anexos">Anexos del control</string>
+
+    <string name="mesa_ayuda_asunto">Asunto</string>
+    <string name="mesa_ayuda_ingrese_asunto">Ingrese el asunto del ticket</string>
+    <string name="mesa_ayuda_descripcion">Descripción</string>
+    <string name="mesa_ayuda_ingrese_descripcion">Ingrese la descripción del ticket</string>
+
+    <!--enfermeria historia-->
+    <string name="historia_enfermeria_diagnostico_etiologico">*Diagnóstico etiológico de la úlcera</string>
+    <string name="historia_enfermeria_diagnostico_etiologico_cual">¿Cual?</string>
+    <string name="historia_enfermeria_diagnostico_intensidad_del_dolor">*Intensidad del dolor</string>
+    <string name="historia_enfermeria_diagnostico_tamano_ulcera">*Tamaño de la úlcera</string>
+    <string name="historia_enfermeria_diagnostico_tamano_ulcera_largo">Largo</string>
+    <string name="historia_enfermeria_diagnostico_tamano_ulcera_ancho">Ancho</string>
+    <string name="historia_enfermeria_diagnostico_tamano_ulcera_cm">cm</string>
+    <string name="historia_enfermeria_diagnostico_signos_infeccion">*Signos de infección</string>
+    <string name="historia_enfermeria_diagnostico_signos_inflamacion">Inflamación</string>
+    <string name="historia_enfermeria_diagnostico_signos_inflamacion_"> alrededor de la ulcera (eritema,edema,calor)</string>
+    <string name="historia_enfermeria_diagnostico_signos_olor">Olor fétido</string>
+    <string name="historia_enfermeria_diagnostico_signos_exudado_purulento">Exudado purulento</string>
+    <string name="historia_enfermeria_diagnostico_signos_aumento_reciente">Aumento reciente de dolor</string>
+    <string name="historia_enfermeria_diagnostico_nota">Nota : Si hay infección se sugiere valoración médica</string>
+    <string name="historia_enfermeria_diagnostico_tejido">*Tejido en la herida</string>
+
+    <string name="historia_enfermeria_diagnostico_granulacion">Tejido Granulación</string>
+    <string name="historia_enfermeria_diagnostico_fibrina">Fibrina</string>
+    <string name="historia_enfermeria_diagnostico_necrotico">Tejido necrótico</string>
+    <string name="historia_enfermeria_diagnostico_hipergranulacion">Hipergranulacion</string>
+    <string name="historia_enfermeria_diagnostico_cicatrazacion">Cicatrización completa</string>
+    <string name="historia_enfermeria_diagnostico_costra">Costra</string>
+    <string name="historia_enfermeria_diagnostico_pulsos">Pulsos</string>
+    <string name="historia_enfermeria_diagnostico_pedio">Pedio</string>
+    <string name="historia_enfermeria_diagnostico_femoral">Femoral</string>
+    <string name="historia_enfermeria_diagnostico_tibial">Tibial</string>
+
+    <string name="historia_enfermeria_diagnostico_piel">Piel alrededor de la úlcera</string>
+    <string name="historia_enfermeria_diagnostico_dermatitis">Dermatitis</string>
+    <string name="historia_enfermeria_diagnostico_fibrosis">Fibrosis</string>
+    <string name="historia_enfermeria_diagnostico_manejo_ulcera">*Manejo úlcera</string>
+    <string name="historia_enfermeria_diagnostico_otro_diagnostico">Ingrese otro diagnóstico</string>
+    <string name="historia_enfermeria_diagnostico_motivo">*¿Cuál es el motivo de la consulta? </string>
+    <string name="historia_enfermeria_diagnostico_motivo_">Ingrese el motivo de la consulta de enfermería</string>
+
+    <!--control -->
+    <string name="control_enfermeria_concepto">* Concepto de enfermería</string>
+    <string name="control_enfermeria_mejoria">Mejoría</string>
+    <string name="imagenes_anexos">Tomar Imágenes</string>
+    <string name="imagenes_anexos_quieres_dejar_seleccion_imagenes_vacia">¿Quieres dejar tu seleccion de imágenes vacía?</string>
+    <string name="control_mejoria_subjetiva">Mejoría subjetiva</string>
+    <string name="control_enfermeria_intensidad_dolor">Intensidad dolor</string>
+    <string name="control_enfermeria_tolera_tratamiento">* Tolera tratamiento</string>
+    <string name="control_enfermeria_comentarios">* Comentarios</string>
+    <string name="control_enfermeria_comentarios_ingresa">Ingresar Comentarios</string>
+
+    <!-- consulta enfermería -->
+    <string name="otro_diagnostiaco_otro_cual">Cual?</string>
+    <string name="otro_diagnostiaco_otro_diagnotico">Ingrese otro diagnóstico</string>
+    <string name="nueva_consulta_enfermeria_validar_diagnostico_etimologico">Debe seleccionar por lo menos un diagnóstico</string>
+    <string name="nueva_consulta_enfermeria_validar_motivo">Ingrese un motivo de la consulta</string>
+    <string name="nueva_consulta_enfermeria_validar_manejo">Debe seleccionar un manejo de la ulcera</string>
+    <string name="nueva_consulta_cam_mensaje_maximo">Ha llegado al máximo de fotos (10)</string>
+    <string name="maximo_de_imagenes_lesion">El máximo de imagenes por lesión son  </string>
+    <string name="maximo_de_imagenes_anexo">El máximo de anexos por consulta son  </string>
+    <string name="maximo_de_lesion">El máximo de imagenes por lesión son  </string>
+
+    <!-- detalle control -->
+    <string name="detalle_control_enfermeria_mejoria_subjetiva">Mejoría subjetiva</string>
+    <string name="detalle_control_enfermeria_concepto">Concepto de enfermería</string>
+    <string name="detalle_control_enfermeria_mejoria">Mejoría</string>
+    <string name="detalle_control_enfermeria_tamano_ulcera">Tamaño úlcera</string>
+    <string name="detalle_consulta_largo">Largo</string>
+    <string name="detalle_consulta_ancho">Ancho</string>
+    <string name="detalle_control_enfermeria_intensidad_dolor">Intensidad dolor</string>
+    <string name="detalle_control_enfermeria_tolera_tratamiento">Tolera tratamiento</string>
+    <string name="detalle_control_enfermeria_comentarios">Comentarios</string>
+    <string name="detalle_consulta_anamnesis">Anamnesis</string>
+
+    <!-- detalle consulta enfermería -->
+    <string name="detalle_consulta_diagnostico_etiologico">Diagnóstico etiológico</string>
+    <string name="detalle_consulta_intensidad_dolor">Intensidad dolor</string>
+    <string name="detalle_consulta_tamano_ulcera">Tamaño úlcera</string>
+    <string name="detalle_consulta_signos_infeccion">Signos de infección</string>
+    <string name="detalle_consulta_tejido_herida">Tejido en la herida</string>
+    <string name="detalle_consulta_pulsos">Pulsos</string>
+    <string name="detalle_consulta_pedio">Pedio</string>
+    <string name="detalle_consulta_femoral">Femoral</string>
+    <string name="detalle_consulta_tibial">Tibial</string>
+    <string name="detalle_consulta_piel_ulcera">Piel alrededor de la úlcera</string>
+    <string name="detalle_consulta_manejo_ulcera">Manejo úlcera</string>
+    <string name="detalle_consulta_motivo_consulta">Motivo de la consulta</string>
+
+    <string name="compartir">Compartir</string>
+    <string name="archivar">Archivar</string>
+    <string name="desarchivar">Desarchivar</string>
+
+    <string name="nueva_consulta_registro_validacion_numerico_tipo_documento">Para el tipo de documento (Cédula de ciudadanía o Tarjeta de identidad) el campo debe ser númerico</string>
+    <string name="nueva_consulta_registro_validacion_edad_tipo_documento">Debe ser mayor de edad para tipo de documento Cédula de ciudadanía</string>
+    <string name="nueva_consulta_registro_validacion_edad_minima_tipo_documento">Debe ser menor de edad para el tipo de documento seleccionado</string>
+    <!-- Validacion-->
+    <string name="validacion_edad_dias">Para la unidad de medida en Días debe seleccionar entre 1 y 29 días </string>
+    <string name="validacion_edad_meses">Para la unidad de medida en Meses debe seleccionar entre 1 y 11 Meses </string>
+    <string name="validacion_edad_anios">Para la unidad de medida en Años debe seleccionar entre 1 y 120 Años</string>
+
+    <string name="validacion_edad_anios_menor">Para tipos de documento (Recién nacido, Certificado de nacido vivo, Menor sin identificar) no debe seleccionar unidad de medida en Años</string>
+    <string name="validacion_edad_menor_edad_">Para edad mayor a 18 años no puede seleccionar (Registro civil,Certificado de nacido vivo, Menor sin identificar,Tarjeta de identidad)</string>
+    <string name="validacion_tipo_documento">Para el tipo de documento seleccionado solo puede seleccionar Años</string>
+    <string name="validacion_tipo_documento_as">Para el tipo de documento Adulto sin Identificar se debe escoger edades mayores a 17 años</string>
+    <string name="validacion_tipo_cedula">La cédula no debe ser mayor a 10  caracteres </string>
+    <string name="validacion_tipo_cedula_extrangeria">La cédula de extranjeria no debe ser mayor a 6  caracteres </string>
+    <string name="validacion_tipo_carnet_diplomatico">El carnet diplomático no debe ser mayor a 16  caracteres </string>
+    <string name="validacion_tipo_salvo_conducto">Salvoconducto no debe ser mayor a 16  caracteres </string>
+
+    <string name="validacion_tipo_permiso">Permiso especial de permanecia no debe ser mayor a 15  caracteres </string>
+    <string name="validacion_tipo_residente">Residente especial para la paz no debe ser mayor a 15  caracteres </string>
+    <string name="validacion_registro_civil">Registro civil no debe ser mayor a 11  caracteres </string>
+    <string name="validacion_tarjeta_identidad">Registro civil no debe ser mayor a 11  caracteres </string>
+    <string name="validacion_certificado_nacido_vivo">Certificado nacido vivo no debe ser mayor a 9  caracteres </string>
+    <string name="validacion_adulto_sin_identificar">Adulto sin identificar no debe ser mayor a 10  caracteres </string>
+    <string name="validacion_menor_sin_identificar">Adulto sin identificar no debe ser mayor a 12  caracteres </string>
+
+    <string name="detalle_remision_tipo">Motivo de remisión</string>
+    <string name="detalle_remision_comentario">Comentarios:</string>
+
+    <string name="detalle_creditos_cargados">Créditos cargados </string>
+    <string name="detalle_creditos_consumidos">Créditos consumidos </string>
+    <string name="detalle_creditos_disponibles">Créditos disponibles </string>
+    <string name="ver_imagenes"><u>Ver imagenes</u></string>
+    <string name="note">Nota</string>
+    <string name="comment_specialist_from_images_plural">Se agregó un comentario por parte del especialista en las siguientes imágenes</string>
+    <string name="comment_specialist_from_images_singular">Se agregó un comentario por parte del especialista en la siguiente imagen</string>
+    <string name="detalle_consulta_medico">Médico:</string>
+    <string name="detalle_consulta_efermera">Enfermera</string>
+    <string name="detalle_remision_requerimiento_descartado">Requrimiento descartado</string>
+    <string name="detalle_remision_requerimiento_descartado_otra_rason">Requrimiento descartado otra razón</string>
+    <string name="nueva_consulta_cam_mensaje_maximo_seleccion">Recuerda que puedes seleccionar máximo 6 fotos por lesion</string>
+    <string name="nueva_consulta_cam_mensaje_maximo_enviar">Recuerda que puedes enviar máximo 6 fotos por lesion</string>
+    <string name="label_sin_seleccionar">Sin seleccionar</string>
+    <string name="dialog_confirm_estas_seguro">¿Estas seguro?</string>
+    <string name="dialog_confirm_cofirm">Comfirmación</string>
+    <string name="dialog_confirm_estas_seguro_no_impresion_diagnostica">¿Estas seguro de no agregar una impresión diagnóstica?</string>
+    <string name="cargando">Cargando...</string>
+    <string name="item_requerimiento_historia_clinica">Historia clínica:</string>
+    <string name="mensaje_validacion_campos">Revisa los campos del formulario</string>
+
+
+    <!--Ventana de actualización-->
+    <string name="gpvch_header">Nueva versión disponible!</string>
+    <string name="gpvch_button_positive">Actualizar la versión actual</string>
+    <string name="gpvch_button_negative">Recuérdamelo más tarde.</string>
+    <string name="gpvch_new_version_info_title">¿Qué hay de nuevo?</string>
+
+    <!--Dermatoscopia-->
+    <string name="dermatoscopia_eliminar_imagen">Eliminar</string>
+    <string name="dermatoscopia_agregar_imagen">Añadir \n dermatoscopia</string>
+    <string name="dermatoscopia_visualizar_imagenes">Imagenes dermatoscopía</string>
+    <string name="dermatoscopia_tomar_imagenes">Tomar imágenes dermatoscópicas</string>
+    <string name="dermatoscopia_ver_imagenes">Ver imágenes dermatoscópicas</string>
+    <string name="nueva_consulta_mensaje_maximo_dermatoscopia">Ha llegado al máximo de fotos (2)</string>
+    <string name="nueva_consulta_mensaje_maximo_total_dermatoscopia">Ha llegado al máximo de fotos en total (10)</string>
+
+    <string name="mensaje_conexion_internet_sin_datos_locales">No poseé conexión a internet y no tiene información de la consulta de forma local </string>
+
+</resources>

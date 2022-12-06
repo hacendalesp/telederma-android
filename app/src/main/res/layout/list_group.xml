@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:id="@+id/layout_item_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="10"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/txt_group_nombre"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Nombre Paciente "
+            android:textSize="7pt"
+            android:layout_weight="5"
+            android:paddingLeft="10dp" />
+
+        <TextView
+            android:id="@+id/txt_group_fecha"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="02/06/2008"
+            android:textSize="7pt"
+            android:layout_weight="3"
+            android:gravity="center" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:orientation="vertical"
+            android:padding="@dimen/pading"
+            android:gravity="right">
+
+            <ImageView
+                android:id="@+id/img_group_estado"
+                android:layout_width="35sp"
+                android:layout_height="35sp"
+                android:background="@drawable/ic_assignment"
+                android:backgroundTint="@color/grayDark"
+                android:scaleType="fitXY"
+                android:layout_gravity="center"/>
+
+            <TextView
+                android:id="@+id/txt_group_texto_estado"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="En proceso"
+                android:textSize="@dimen/txt_texto_small"
+                android:layout_gravity="center"
+                android:gravity="center" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!--<LinearLayout
+        android:id="@+id/layout_item_compartir"
+        android:layout_width="0dp"
+        android:layout_weight=".2"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/pading"
+        android:visibility="gone"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="35sp"
+            android:layout_height="35sp"
+            android:background="@drawable/ic_share"
+            android:backgroundTint="@color/colorPrimaryDark"
+            android:scaleType="fitXY" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/consultas_compartir"
+            android:textSize="@dimen/txt_texto_small"
+            android:layout_gravity="center"
+            android:gravity="center" />
+
+    </LinearLayout>-->
+
+</LinearLayout>

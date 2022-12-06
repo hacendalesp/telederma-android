@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:contexto="com.telederma.gov.co.fragments.DetalleConsultaFragment">
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tabs_detalle_consulta"
+        style="@style/telederma_tab_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:tabPaddingStart="0dp"
+        app:tabPaddingEnd="0dp"
+        app:tabPaddingTop="0dp"
+        app:tabPaddingBottom="0dp"
+        android:background="@color/colorPrimary"
+        app:tabGravity="fill"
+        app:tabMode="fixed"></android.support.design.widget.TabLayout>
+
+    <ProgressBar
+        android:id="@+id/srl_elv_consultas_detalle"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity = "center"/>
+
+    <FrameLayout
+        android:id="@+id/tabs_detalle_consulta_content"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <Button
+        android:id="@+id/btn_nuevo_control"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark"
+        android:drawablePadding="20dp"
+        android:drawableRight="@drawable/ic_menu_nueva_consulta"
+        android:drawableTint="@color/white"
+        android:gravity="right|center"
+        android:paddingRight="20dp"
+        android:text="@string/detalle_consulta_nuevo_control"
+        android:textColor="@color/white"
+        android:textSize="8pt" />
+
+</LinearLayout>

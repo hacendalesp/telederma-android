@@ -1,0 +1,445 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    android:padding="15sp"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:paddingLeft="20dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/consulta_control_mejora"
+                    android:textSize="16sp"
+                    style="@style/telederma_text_view_label" />
+
+                <SeekBar
+                    android:id="@+id/seekBar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    android:backgroundTint="@color/colorPrimaryDark"
+                    android:progressBackgroundTint="@color/colorPrimary"
+                    android:progressBackgroundTintMode="add"
+                    android:layout_marginTop="5dp"
+                    android:progress="0"
+                    android:thumbTintMode="src_in"
+                    android:max="100" />
+
+                <TextView
+                    android:id="@+id/count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0/100"
+                    android:layout_gravity="center"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="20dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/consulta_control_hizo_el_tratamiento"
+                    android:gravity="left"
+                    android:layout_marginTop="16sp"
+                    style="@style/telederma_text_view_label" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+                        android:id="@+id/id_indicaciones"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="left"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/id_indicaciones_si"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="16dp"
+                            android:checked="false"
+                            android:text="@string/nueva_consulta_registro_consulta_si" />
+
+                        <RadioButton
+                            android:id="@+id/id_indicaciones_no"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:checked="true"
+                            android:text="@string/nueva_consulta_registro_consulta_no" />
+                    </RadioGroup>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="20dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/consulta_control_tolero_medicamentos"
+                    android:gravity="left"
+                    android:layout_marginTop="16sp"
+                    style="@style/telederma_text_view_label" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+                        android:id="@+id/id_tolerancia_medicamentos"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="left"
+                        android:orientation="horizontal">
+
+                    </RadioGroup>
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_marginTop="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/grabar_audio_fisico"
+                    android:layout_alignBottom="@+id/grabar_audio_fisico"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginBottom="8dp"
+                    android:text="@string/examen_fisico_text"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="17sp" />
+
+                <include
+                    android:id="@+id/f_examen_fisico"
+                    layout="@layout/speech_long_text"></include>
+
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="20dp"
+                    android:paddingTop="25dp"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBaseline="@+id/grabar_audio_fisico"
+                        android:layout_alignBottom="@+id/grabar_audio_fisico"
+                        android:layout_alignParentStart="true"
+                        android:text="@string/examen_fisico_text"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="17sp" />
+
+
+                    <!--Botones de la funcionalidad audio desactivados-->
+                    <Button
+                        android:id="@+id/grabar_audio_fisico"
+                        android:layout_width="50sp"
+                        android:layout_height="45sp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginLeft="10sp"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:background="@drawable/round_button"
+                        android:drawableTop="@drawable/ic_mic"
+                        android:drawableTint="@color/white"
+                        android:paddingTop="10dp" />
+
+                    <Button
+                        android:id="@+id/detener_audio_fisico"
+                        android:layout_width="50sp"
+                        android:layout_height="45sp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginLeft="10sp"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:background="@drawable/round_button_red"
+                        android:drawableTop="@drawable/ic_stop"
+                        android:drawableTint="@color/white"
+                        android:paddingTop="10dp"
+                        android:visibility="invisible" />
+
+                    <Space
+                        android:id="@+id/spacio4"
+                        android:layout_width="match_parent"
+                        android:layout_height="7sp"
+                        android:layout_below="@id/grabar_audio_fisico" />
+
+                    <EditText
+                        android:id="@+id/texto_examen_fisico"
+                        android:layout_width="match_parent"
+                        android:layout_height="200sp"
+                        android:layout_below="@id/spacio4"
+                        android:hint="@string/examen_fisico"
+                        android:gravity="center"
+                        android:justificationMode="inter_word"
+                        android:paddingLeft="5sp"
+                        android:inputType="textMultiLine|textAutoCorrect|textCapSentences"
+                        android:background="@drawable/border_style" />
+
+
+                </RelativeLayout>
+
+                <com.telederma.gov.co.views.ReproductorAudioView
+                    android:id="@+id/reproductor_audio_fisico"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:visibility="gone"
+                    app:showRemoveButton="true" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_marginTop="16dp">
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:layout_marginBottom="8dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/detalle_consulta_anexos"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="17sp" />
+                    <Space
+                        android:layout_width="@dimen/padding_small_10dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"/>
+                    <Button
+                        android:id="@+id/camara"
+                        android:layout_width="50sp"
+                        android:layout_height="50sp"
+                        android:layout_marginRight="24dp"
+                        android:layout_alignParentTop="true"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:background="@drawable/round_button"
+                        android:drawableTop="@drawable/ic_photo_camera"
+                        android:drawableTint="@color/white"
+                        android:paddingTop="13dp" />
+                </LinearLayout>
+
+                <include
+                    android:id="@+id/f_texto_anexo"
+                    layout="@layout/speech_long_text"></include>
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="25sp"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:text="@string/detalle_consulta_anexos"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="17sp" />
+
+                    <!--<Button-->
+                        <!--android:id="@+id/camara"-->
+                        <!--android:layout_width="50sp"-->
+                        <!--android:layout_height="45sp"-->
+                        <!--android:layout_alignParentTop="true"-->
+                        <!--android:gravity="center_vertical|center_horizontal"-->
+                        <!--android:background="@drawable/round_button"-->
+                        <!--android:drawableTop="@drawable/ic_photo_camera"-->
+                        <!--android:drawableTint="@color/white"-->
+                        <!--android:layout_toStartOf="@+id/grabar_audio_anexo"-->
+                        <!--android:paddingTop="10dp" />-->
+
+                    <Button
+                        android:id="@+id/grabar_audio_anexo"
+                        android:layout_width="50sp"
+                        android:layout_height="45sp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginLeft="10sp"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:background="@drawable/round_button"
+                        android:drawableTop="@drawable/ic_mic"
+                        android:drawableTint="@color/white"
+                        android:paddingTop="10dp" />
+
+                    <Button
+                        android:id="@+id/detener_audio_anexo"
+                        android:layout_width="50sp"
+                        android:layout_height="45sp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginLeft="10sp"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:background="@drawable/round_button_red"
+                        android:drawableTop="@drawable/ic_stop"
+                        android:drawableTint="@color/white"
+                        android:paddingTop="10dp"
+                        android:visibility="invisible" />
+
+                    <Space
+                        android:id="@+id/spacio2"
+                        android:layout_width="match_parent"
+                        android:layout_height="7sp"
+                        android:layout_below="@id/grabar_audio_anexo" />
+
+
+
+                    <EditText
+                        android:id="@+id/texto_anexo"
+                        android:layout_width="match_parent"
+                        android:layout_height="200sp"
+                        android:layout_below="@id/spacio2"
+                        android:gravity="center"
+                        android:hint="@string/anexos"
+                        android:paddingLeft="5sp"
+                        android:justificationMode="inter_word"
+                        android:inputType="textMultiLine|textAutoCorrect|textCapSentences"
+                        android:background="@drawable/border_style"
+                        />
+
+
+
+                </RelativeLayout>
+
+                <com.telederma.gov.co.views.ReproductorAudioView
+                    android:id="@+id/reproductor_audio_anexo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:visibility="gone"
+                    app:showRemoveButton="true" />
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="7sp" />
+
+                <com.telederma.gov.co.views.ExtendableGridView
+                    android:id="@+id/grid_imagenes_anexo"
+                    android:columnWidth="70dp"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center"
+                    android:numColumns="2"
+                    android:stretchMode="columnWidth"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0"></com.telederma.gov.co.views.ExtendableGridView>
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="7sp" />
+
+            </LinearLayout>
+
+
+            <com.telederma.gov.co.views.ExtendableGridView
+                android:id="@+id/grid_imagenes"
+                android:columnWidth="70dp"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:numColumns="2"
+                android:stretchMode="columnWidth"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0"></com.telederma.gov.co.views.ExtendableGridView>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="7sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_weight="5">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingLeft="15sp"
+                    android:paddingRight="15sp">
+
+                    <Button
+                        android:id="@+id/btn_crear_control"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        style="@style/telederma_button"
+                        android:text="@string/consulta_control_guargar" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

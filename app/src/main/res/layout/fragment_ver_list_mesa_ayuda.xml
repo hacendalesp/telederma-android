@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:orientation="vertical"
+tools:contexto="com.telederma.gov.co.fragments.MesaAyudaVerTickets">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+        android:id="@+id/layout_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="10dp"
+        android:weightSum="10"
+        android:paddingTop="10dp">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="@string/acerca_de_head_table_ticket"
+                android:paddingLeft="10dp"
+                android:gravity="start"
+                android:textSize="7pt" />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="6"
+            android:text="@string/acerca_de_head_table_asunto"
+            android:gravity="center"
+            android:paddingLeft="10dp"
+            android:textSize="7pt" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:text="@string/acerca_de_head_table_estado"
+            android:textSize="7pt" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorPrimaryDark"
+    android:textSize="1sp" />
+
+    <FrameLayout
+    android:id="@+id/tabs_consultas_content"
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="1"
+    >
+        <TextView
+        android:id="@+id/lbl_bandeja_vacia"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="@string/consultas_bandeja_vacía"
+        android:textSize="8pt"
+        android:layout_alignParentTop="true"
+        android:background="@color/gray"
+        android:textColor="@color/blue_gray"
+        android:gravity="center" />
+
+        <TextView
+        android:id="@+id/lbl_actualizar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/gray"
+        android:padding="2dp"
+        android:textSize="7.5pt"
+        android:gravity="center"
+        android:textStyle="italic|bold"
+        android:textColor="@color/blue_gray"
+        android:layout_alignParentTop="true"
+        android:text="@string/consultas_actualizar" />
+
+        <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/srl_elv_consultas"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/lbl_actualizar"
+        >
+
+            <ExpandableListView
+                android:id="@+id/elv_consultas_resueltas"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:visibility="gone"></ExpandableListView>
+        </android.support.v4.widget.SwipeRefreshLayout>
+
+    </FrameLayout>
+
+
+</LinearLayout>
+
+
+
+
+
+
+
+

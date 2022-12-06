@@ -1,0 +1,667 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    android:padding="25sp"
+    android:clickable="true"
+    android:descendantFocusability="beforeDescendants"
+    android:focusableInTouchMode="true">na
+    <!--android:descendantFocusability="beforeDescendants"-->
+    <!--android:focusable="true"-->
+    <!--android:fitsSystemWindows="true"-->
+    <ScrollView android:id="@+id/sv_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:descendantFocusability="beforeDescendants"
+            android:focusableInTouchMode="true">
+            <!--android:focusable="true"-->
+            <!--android:descendantFocusability="beforeDescendants"-->
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/nueva_consulta_registro_consulta_anamnesis"
+                style="@style/telederma_text_view_label"
+                android:gravity="center" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                style="@style/telederma_text_view_label"
+                android:text="@string/nueva_consulta_registro_consulta_mptivo_de_consulta"
+                android:layout_marginTop="16sp" />
+
+            <EditText android:id="@+id/motivo_de_consulta"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="27sp"
+                android:minHeight="80dp"
+                android:textColor="@color/colorPrimaryDark"/>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                style="@style/telederma_text_view_label"
+                android:text="@string/nueva_consulta_registro_consulta_enfermedad_actual"
+                android:layout_marginTop="16sp" />
+
+            <EditText android:id="@+id/enfermedad_actual"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="27sp"
+                android:minHeight="80dp"
+                android:textColor="@color/colorPrimaryDark"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/nueva_consulta_registro_consulta_tiempo_evolucion"
+                android:gravity="left"
+                style="@style/telederma_text_view_label"
+                android:layout_marginTop="16sp" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:layout_marginTop="16sp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/nueva_consulta_registro_consulta_tiempo"
+                        style="@style/telederma_text_view_label" />
+
+
+                    <EditText
+                        android:id="@+id/id_consulta_tiempo"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="0dp"
+                        android:maxLength="2"
+                        android:inputType="numberPassword|textVisiblePassword"
+                        android:imeOptions="actionNext"
+                        android:hint="@string/nueva_consulta_registro_consulta_ingrese_tiempo" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:layout_marginTop="16sp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/nueva_consulta_registro_consulta_tiempo_unidad_medida"
+                        style="@style/telederma_text_view_label" />
+
+                    <Spinner
+                        android:id="@+id/id_consulta_unidad"
+                        android:background="@drawable/custom_spinner_background"
+                        android:spinnerMode="dropdown"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="4dp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                style="@style/telederma_text_view_label"
+                android:text="@string/nueva_consulta_registro_consulta_numero_de_lesiones_iniciales"
+                android:layout_marginTop="16sp" />
+
+            <Spinner
+                android:id="@+id/id_consulta_lesiones"
+                android:background="@drawable/custom_spinner_background"
+                android:spinnerMode="dropdown"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                style="@style/telederma_text_view_label"
+                android:text="@string/nueva_consulta_registro_consulta_evolucion_de_lesiones"
+                android:layout_marginTop="16sp"
+                android:id="@+id/txt_evolucion" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:id="@+id/id_lesiones"
+                android:layout_marginLeft="10dp">
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/nueva_consulta_registro_consulta_cambios_evidentes"
+                style="@style/telederma_text_view_label"
+                android:gravity="left"
+                android:layout_marginTop="16sp" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="20dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="@string/nueva_consulta_registro_consulta_sangran"
+                    style="@style/telederma_text_view_label" />
+
+                <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:id="@+id/id_consulta_sangran"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:gravity="right">
+
+                    <RadioButton
+                        android:id="@+id/id_consulta_cambian_sangran_si"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="16dp"
+                        android:checked="false"
+                        android:text="@string/nueva_consulta_registro_consulta_si" />
+
+                    <RadioButton
+                        android:id="@+id/id_consulta_cambian_sangran_no"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="true"
+                        android:text="@string/nueva_consulta_registro_consulta_no" />
+                </RadioGroup>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="20dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="@string/nueva_consulta_registro_consulta_exudan"
+                    style="@style/telederma_text_view_label"
+                    android:gravity="left" />
+
+                <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:id="@+id/id_consulta_exudan"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="right"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/id_consulta_cambian_exudan_si"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="16dp"
+                        android:checked="false"
+                        android:text="@string/nueva_consulta_registro_consulta_si" />
+
+                    <RadioButton
+                        android:id="@+id/id_consulta_cambian_exudan_no"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="true"
+                        android:text="@string/nueva_consulta_registro_consulta_no" />
+                </RadioGroup>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="20dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="@string/nueva_consulta_registro_consulta_supuran"
+                    style="@style/telederma_text_view_label"
+                    android:gravity="left" />
+
+
+                <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:id="@+id/id_consulta_supuran"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="right"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/id_consulta_cambian_supuran_si"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="16dp"
+                        android:checked="false"
+                        android:text="@string/nueva_consulta_registro_consulta_si" />
+
+                    <RadioButton
+                        android:id="@+id/id_consulta_cambian_supuran_no"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="true"
+                        android:text="@string/nueva_consulta_registro_consulta_no" />
+                </RadioGroup>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="16sp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/txt_id_consulta_sintomas"
+                    android:text="@string/nueva_consulta_registro_consulta_sintomas"
+                    style="@style/telederma_text_view_label"
+                    android:gravity="left" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:duplicateParentState="true"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:id="@+id/id_consulta_sintomas_prurito"
+                    android:layout_marginLeft="10dp">
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="16sp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/nueva_consulta_registro_consulta_sintomas_empeoran"
+                    style="@style/telederma_text_view_label"
+                    android:gravity="left"
+                    android:id="@+id/txt_empeoran" />
+
+
+                <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:id="@+id/id_consulta_sintomas_empeoran"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="20dp"
+                    android:gravity="left"
+                    android:orientation="vertical">
+
+
+                </RadioGroup>
+            </LinearLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16sp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/nueva_consulta_registro_consulta_otros_factores"
+                    style="@style/telederma_text_view_label" />
+
+
+                <android.support.v7.widget.SwitchCompat
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginEnd="13dp"
+                    android:thumb="@drawable/switch_selector"
+                    app:track="@drawable/switch_track"
+                    android:id="@+id/id_factores" />
+
+            </RelativeLayout>
+
+            <EditText
+                android:id="@+id/id_consulta_otros_factores"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:inputType="textCapSentences|textMultiLine"
+                android:imeOptions="actionNext"
+                android:hint="@string/nueva_consulta_registro_consulta_ingrese_factores"
+                android:visibility="gone" />
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16sp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/nueva_consulta_registro_consulta_antecedentes"
+                    style="@style/telederma_text_view_label" />
+
+
+                <android.support.v7.widget.SwitchCompat
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginEnd="13dp"
+                    android:id="@+id/id_antecedenes"
+                    android:thumb="@drawable/switch_selector"
+                    app:track="@drawable/switch_track" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/id_txt_antecedentes"
+                android:text="@string/nueva_consulta_registro_consulta_antecedentes_personles"
+                style="@style/telederma_text_view_label"
+                android:visibility="gone"
+                android:layout_marginTop="16sp" />
+
+            <EditText
+                android:id="@+id/id_consulta_personales"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:inputType="textCapSentences|textMultiLine"
+                android:imeOptions="actionNext"
+                android:hint="@string/nueva_consulta_registro_consulta_ingrese_antecedentes_personales"
+                android:visibility="gone" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/nueva_consulta_registro_consulta_antecedentes_familiares"
+                android:id="@+id/id_txt_familiares"
+                style="@style/telederma_text_view_label"
+                android:visibility="gone"
+                android:layout_marginTop="16sp" />
+
+            <EditText
+                android:id="@+id/id_consulta_familiares"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:inputType="textCapSentences|textMultiLine"
+                android:imeOptions="actionNext"
+                android:visibility="gone"
+                android:hint="@string/nueva_consulta_registro_consulta_ingrese_antecedentes_familiares" />
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16sp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/nueva_consulta_registro_consulta_tratamiento_recibido"
+                    style="@style/telederma_text_view_label" />
+
+
+                <android.support.v7.widget.SwitchCompat
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginEnd="13dp"
+                    android:id="@+id/id_recibido"
+                    android:thumb="@drawable/switch_selector"
+                    app:track="@drawable/switch_track" />
+
+            </RelativeLayout>
+
+
+            <EditText
+                android:id="@+id/id_consulta_recibidos"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16sp"
+                android:inputType="textCapSentences|textMultiLine"
+                android:imeOptions="actionNext"
+                android:visibility="gone"
+                android:hint="@string/nueva_consulta_registro_consulta_tratamiento_recibido" />
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16sp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/nueva_consulta_registro_consulta_sustancias"
+                    style="@style/telederma_text_view_label" />
+
+
+                <android.support.v7.widget.SwitchCompat
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginEnd="13dp"
+                    android:id="@+id/id_agravan_los_sintomas"
+                    android:thumb="@drawable/switch_selector"
+                    app:track="@drawable/switch_track" />
+
+            </RelativeLayout>
+
+
+            <EditText
+                android:id="@+id/id_consulta_sustancias"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:inputType="textCapSentences|textMultiLine"
+                android:imeOptions="actionNext"
+                android:visibility="gone"
+                android:hint="@string/nueva_consulta_registro_consulta_ingrese_sustancias" />
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16sp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/nueva_consulta_registro_consulta_efecto_tratamiento"
+                    style="@style/telederma_text_view_label" />
+
+
+                <android.support.v7.widget.SwitchCompat
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginEnd="13dp"
+                    android:id="@+id/id_efectos"
+                    android:thumb="@drawable/switch_selector"
+                    app:track="@drawable/switch_track" />
+
+            </RelativeLayout>
+
+
+            <EditText
+                android:id="@+id/id_consulta_efectos"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textCapSentences|textMultiLine"
+                android:imeOptions="actionNext"
+                android:visibility="gone"
+                android:hint="@string/nueva_consulta_registro_consulta_ingrese_efectos"
+                android:layout_marginTop="16sp" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/nueva_consulta_registro_consulta_impresion_diagnostica"
+                style="@style/telederma_text_view_label"
+                android:layout_marginTop="16sp" />
+
+            <AutoCompleteTextView
+                android:id="@+id/id_consulta_cie10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:isScrollContainer="true"
+                android:hint="Impresión diagnóstica"
+                style="@style/telederma_edit_text"></AutoCompleteTextView>
+            <!--android:dropDownHeight="300dp"-->
+
+            <EditText
+                android:id="@+id/id_consulta_diagnostico"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left|top"
+                android:layout_marginTop="0dp"
+                android:inputType="textCapSentences"
+                android:layout_weight="1"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:imeOptions="actionNext"
+                android:textCursorDrawable="@android:color/black"
+                android:cursorVisible="true"
+                android:layout_marginBottom="38dp"
+                android:hint="@string/nueva_consulta_registro_consulta_ingrese_impresion"
+                android:visibility="gone"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_weight="5">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+
+                    <Button
+                        android:id="@+id/btn2"
+                        android:layout_width="15sp"
+                        android:layout_height="15sp"
+                        android:layout_margin="5sp"
+                        android:background="@drawable/circulo_azul_claro" />
+
+                    <Button
+                        android:id="@+id/btn1"
+                        android:layout_width="15sp"
+                        android:layout_height="15sp"
+                        android:layout_margin="5sp"
+                        android:background="@drawable/circulo_azul" />
+
+
+                    <Button
+                        android:id="@+id/btn3"
+                        android:layout_width="15sp"
+                        android:layout_height="15sp"
+                        android:layout_margin="5sp"
+                        android:background="@drawable/circulo_gris" />
+
+
+                    <Button
+                        android:id="@+id/btn4"
+                        android:layout_width="15sp"
+                        android:layout_height="15sp"
+                        android:layout_margin="5sp"
+                        android:background="@drawable/circulo_gris" />
+
+                    <Button
+                        android:id="@+id/btn5"
+                        android:layout_width="15sp"
+                        android:layout_height="15sp"
+                        android:layout_margin="5sp"
+                        android:background="@drawable/circulo_gris" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingLeft="15sp"
+                    android:paddingRight="15sp">
+
+                    <Button
+                        android:id="@+id/btn_registrar_historia"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        style="@style/telederma_button_dark"
+                        android:text="@string/nueva_consulta_registro_consulta_siguiente" />
+
+                    <Button
+                        android:id="@+id/btn_resumen"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        style="@style/telederma_button_dark"
+                        android:text="@string/nueva_consulta_registro_consulta_resumen"
+                        android:visibility="gone" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+</FrameLayout>

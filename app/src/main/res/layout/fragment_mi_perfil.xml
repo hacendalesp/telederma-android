@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:contexto="com.telederma.gov.co.fragments.MiPerfilFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/img_profile"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/img_perfil" />
+
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:src="@drawable/circle" />
+                </FrameLayout>
+
+                <android.support.design.widget.FloatingActionButton
+                    android:id="@+id/fab_capturar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:fabSize="mini"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:src="@drawable/ic_edit"
+                    android:tint="@color/white"
+                    app:backgroundTint="@color/colorPrimary" />
+            </RelativeLayout>
+
+            <TextView
+                style="@style/telederma_text_view_label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16sp"
+                android:text="@string/mi_perfil_usuario" />
+
+            <EditText
+                android:id="@+id/txt_documento"
+                android:enabled="false"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="numberPassword|textVisiblePassword"
+                android:imeOptions="actionNext" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="2sp"
+                android:background="@color/gray" />
+
+            <TextView
+                style="@style/telederma_text_view_label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16sp"
+                android:text="@string/mi_perfil_nombre" />
+
+            <EditText
+                android:id="@+id/txt_nombres"
+                android:drawableEnd="@drawable/ic_edit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textCapWords|textPersonName"
+                android:imeOptions="actionNext"
+                android:hint="@string/mi_perfil_nombre_hint" />
+
+            <TextView
+                style="@style/telederma_text_view_label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16sp"
+                android:text="@string/mi_perfil_apellido" />
+
+            <EditText
+                android:id="@+id/txt_apellidos"
+                android:drawableEnd="@drawable/ic_edit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textCapWords|textPersonName"
+                android:imeOptions="actionNext"
+                android:hint="@string/mi_perfil_apellido_hint" />
+
+            <TextView
+                style="@style/telederma_text_view_label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16sp"
+                android:text="@string/mi_perfil_celular" />
+
+            <EditText
+                android:id="@+id/txt_nro_celular"
+                android:drawableEnd="@drawable/ic_edit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="phone"
+                android:digits="0123456789"
+                android:imeOptions="actionNext"
+                android:hint="@string/mi_perfil_celular_hint" />
+
+            <TextView
+                style="@style/telederma_text_view_label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16sp"
+                android:text="@string/mi_perfil_correo" />
+
+            <EditText
+                android:id="@+id/txt_correo"
+                android:drawableEnd="@drawable/ic_edit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textEmailAddress"
+                android:imeOptions="actionDone"
+                android:hint="@string/mi_perfil_correo_hint" />
+
+
+
+            <!--Campos para nueva contrasena-->
+
+            <TextView
+                style="@style/telederma_text_view_label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16sp"
+                android:text="@string/label_current_password" />
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:hintEnabled="false"
+                app:passwordToggleEnabled="true"
+                android:layout_marginBottom="16dp">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/ed_current_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPassword"
+                    android:imeOptions="actionNext"
+                    android:hint="@string/current_password_hint"/>
+            </android.support.design.widget.TextInputLayout>
+
+            <CheckBox
+                android:id="@+id/cb_change_password"
+                android:text="@string/change_password"
+                android:textSize="14dp"
+                style="@style/telederma_text_view_label"
+                android:theme="@style/checkBoxStyle"
+                android:layout_marginTop="16dp"
+                android:checked="false"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="visible"/>
+
+            <LinearLayout
+                android:id="@+id/ll_content_change_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/spinner_states"
+                android:layout_marginTop="16dp"
+                android:orientation="vertical"
+                android:visibility="gone">
+                <TextView
+                    style="@style/telederma_text_view_label"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16sp"
+                    android:textColor="@color/orange"
+                    android:text="@string/message_change_password" />
+
+                <TextView
+                    style="@style/telederma_text_view_label"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/label_new_password" />
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:hintEnabled="false"
+                    app:passwordToggleEnabled="true"
+                    android:layout_marginBottom="16dp">
+
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/ed_new_password"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textPassword"
+                        android:imeOptions="actionNext"
+                        android:hint="@string/login_new_password_hint"/>
+                </android.support.design.widget.TextInputLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/orange"
+                    android:textSize="6pt"
+                    android:text="@string/soy_nuevo_msj_reglas_contrasena" />
+
+                <TextView
+                    style="@style/telederma_text_view_label"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16sp"
+                    android:text="@string/label_confirm_new_password" />
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:hintEnabled="false"
+                    app:passwordToggleEnabled="true"
+                    android:layout_marginBottom="16dp">
+
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/ed_confirm_new_password"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textPassword"
+                        android:imeOptions=""
+                        android:hint="@string/login_confirm_new_password_hint"/>
+                </android.support.design.widget.TextInputLayout>
+
+            </LinearLayout>
+            <Button
+                style="@style/telederma_button_dark"
+                android:id="@+id/btn_firmar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24sp"
+                android:layout_gravity="center"
+                android:text="@string/mi_perfil_firma" />
+
+            <Button
+                style="@style/telederma_button"
+                android:id="@+id/btn_guardar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24sp"
+                android:layout_marginBottom="16sp"
+                android:layout_gravity="center"
+                android:text="@string/mi_perfil_guardar_cambios" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

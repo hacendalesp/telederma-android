@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black_original">
+
+    <com.telederma.gov.co.dialogs.ShowImagesViewPager
+        android:id="@+id/vp_images"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="@dimen/padding_small_10dp"/>
+
+    <TextView
+        android:id="@+id/tv_image_index"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:textColor="@color/white"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="40dp"/>
+    <Button
+        android:id="@+id/btn_close_dialog"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="10dp"
+        android:backgroundTint="@color/colorPrimaryDark"
+        android:background="@drawable/ic_close"
+        />
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical|right"
+        android:orientation="vertical"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="470dp"
+        android:id="@+id/ll_del_image"
+        android:layout_marginLeft="15dp"
+        android:visibility="gone">
+        <LinearLayout
+            android:id="@+id/action_delete_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <ImageView
+                android:id="@+id/iv_delete_image"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:src="@drawable/eliminar_imagen"
+                android:scaleType="fitXY" />
+        </LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="0dp"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            android:textSize="13dp"
+            android:text="@string/dermatoscopia_eliminar_imagen"
+            android:visibility="visible"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical|right"
+        android:orientation="vertical"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="470dp"
+        android:id="@+id/ll_add_image"
+        android:layout_marginRight="15dp"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:id="@+id/action_add_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/iv_add_image"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/dermatoscopia_agregar" />
+        </LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="0dp"
+            android:textColor="@android:color/white"
+            android:textSize="13dp"
+            android:textStyle="bold"
+            android:text="@string/dermatoscopia_agregar_imagen"
+            android:visibility="visible"/>
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:id="@+id/ll_show_image_der"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="15sp"
+        android:paddingRight="15sp"
+        android:layout_marginTop="605dp"
+        android:visibility="gone">
+
+        <Button
+            android:id="@+id/btn_show_image_der"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            style="@style/telederma_button_orange_light"
+            android:text="@string/dermatoscopia_ver_imagenes"
+            />
+
+    </LinearLayout>
+
+
+
+
+    <LinearLayout android:id="@+id/ll_content_image"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="35dp"
+        android:visibility="gone">
+        <TextView
+            android:id="@+id/tv_desc"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:scrollbars="vertical"
+            android:layout_gravity="center_horizontal"
+            android:shadowColor="@android:color/darker_gray"
+            android:shadowRadius="3"
+            android:shadowDy="4"
+            android:shadowDx="5"
+            android:textColor="@android:color/white"
+            android:text=""
+            />
+        <!--style="@style/AudioFileInfoOverlayText"-->
+        <!--android:text="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."-->
+    </LinearLayout>
+
+</RelativeLayout>

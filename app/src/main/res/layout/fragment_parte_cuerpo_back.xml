@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:contexto=".fragments.ParteCuerpoBackFragment"
+    android:background="@color/white"
+    android:paddingTop="5dp"
+    android:id="@+id/contenedor">
+
+    <com.telederma.gov.co.patologia.NoteImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/imageMapView"
+        android:visibility="invisible" />
+
+    <com.telederma.gov.co.patologia.NoteImageView
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/face"
+        android:src="@drawable/cabeza_"
+        android:visibility="gone" />
+
+    <com.telederma.gov.co.patologia.NoteImageView
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/planta_derecha"
+        android:src="@drawable/planta_der"
+        android:visibility="gone" />
+
+    <com.telederma.gov.co.patologia.NoteImageView
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/planta_izquierda"
+        android:src="@drawable/planta_izq"
+        android:visibility="gone" />
+
+    <com.telederma.gov.co.patologia.NoteImageView
+        android:layout_width="match_parent"
+        android:layout_height="450dp"
+        android:id="@+id/mano_izquierda"
+        android:src="@drawable/mano_izq"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
+        android:visibility="gone" />
+
+    <com.telederma.gov.co.patologia.NoteImageView
+        android:layout_width="match_parent"
+        android:layout_height="450dp"
+        android:id="@+id/mano_izquierda_atras"
+        android:src="@drawable/mano_grande_izq_es"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
+        android:visibility="gone" />
+
+    <com.telederma.gov.co.patologia.NoteImageView
+        android:layout_width="match_parent"
+        android:layout_height="450dp"
+        android:id="@+id/pie_izquierdo"
+        android:src="@drawable/pie_izq_grande"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
+        android:visibility="gone" />
+
+    <com.telederma.gov.co.patologia.NoteImageView
+        android:layout_width="match_parent"
+        android:layout_height="450dp"
+        android:id="@+id/pie_derecho"
+        android:src="@drawable/pie_der_grande"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
+        android:visibility="gone" />
+
+
+    <com.telederma.gov.co.patologia.NoteImageView
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:id="@+id/mano_derecha_atras"
+        android:src="@drawable/mano_grande_der_es"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
+        android:visibility="gone" />
+
+    <com.telederma.gov.co.patologia.NoteImageView
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:id="@+id/mano_derecha"
+        android:src="@drawable/mano_der"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
+        android:visibility="gone" />
+
+    <com.telederma.gov.co.patologia.NoteImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/zona_genital"
+        android:src="@drawable/zona_genital_detalle"
+        android:scaleType="centerCrop"
+        android:visibility="gone" />
+
+    <com.telederma.gov.co.patologia.NoteImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/zona_genital_hombre"
+        android:src="@drawable/hombre_zona_genital_detalle"
+        android:scaleType="centerCrop"
+        android:visibility="gone" />
+
+    <com.telederma.gov.co.patologia.NoteImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/zona_torso_hombre"
+        android:src="@drawable/hombre_torso_grande"
+        android:scaleType="centerCrop"
+        android:visibility="gone" />
+
+    <com.telederma.gov.co.patologia.NoteImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/gluteos"
+        android:src="@drawable/gluteos2"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
+        android:visibility="gone" />
+
+    <com.telederma.gov.co.patologia.NoteImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/cabeza_atras"
+        android:src="@drawable/cabeza_grande"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
+        android:visibility="gone" />
+
+    <com.telederma.gov.co.patologia.NoteImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/hombre_cabeza_atras"
+        android:src="@drawable/hombre_cabeza_grande"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
+        android:visibility="gone" />
+
+    <com.telederma.gov.co.patologia.NoteImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/hombre_cabeza_frente"
+        android:src="@drawable/hombre_cabeza_grande_frente"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
+        android:visibility="gone" />
+
+
+    <com.telederma.gov.co.patologia.NoteImageView
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:id="@+id/torso"
+        android:src="@drawable/torzo"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center|top"
+        android:orientation="vertical"
+        android:layout_alignParentTop="true">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="right">
+
+            <ImageView
+                android:id="@+id/zoom_8"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/ic_planta_pie"
+                android:alpha="0.5"
+                android:backgroundTint="@color/colorPrimaryDark"
+                android:layout_margin="10dp"
+                android:visibility="gone" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</RelativeLayout>

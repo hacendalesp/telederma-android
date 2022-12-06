@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:gravity="center_vertical"
+    android:padding="16sp"
+    tools:context="com.telederma.gov.co.fragments.GestionFragment">
+
+    <Button
+        android:id="@+id/btn_editar_perfil"
+        style="@style/telederma_button_dark"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16sp"
+        android:drawableTint="@color/white"
+        android:text="@string/gestion_editar_perfil" />
+
+    <Button
+        android:id="@+id/btn_mesa_ayuda"
+        style="@style/telederma_button_dark"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16sp"
+        android:drawableTint="@color/white"
+        android:text="@string/gestion_mesa_ayuda" />
+
+    <Button
+        android:id="@+id/btn_creditos"
+        style="@style/telederma_button_dark"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16sp"
+        android:drawableTint="@color/white"
+        android:text="@string/gestion_creditos" />
+
+    <Button
+        android:id="@+id/btn_acerca_de"
+        style="@style/telederma_button_dark"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16sp"
+        android:drawableTint="@color/white"
+        android:text="@string/gestion_acerca_de" />
+
+    <Button
+        android:id="@+id/btn_aviso_legal"
+        style="@style/telederma_button_dark"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16sp"
+        android:drawableTint="@color/white"
+        android:text="@string/gestion_aviso_legal" />
+
+</LinearLayout>

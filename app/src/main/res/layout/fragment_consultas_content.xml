@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:contexto="com.telederma.gov.co.fragments.ConsultasContentFragment">
+
+    <TextView
+        android:id="@+id/lbl_bandeja_vacia"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="@string/consultas_bandeja_vacía"
+        android:textSize="8pt"
+        android:layout_alignParentTop="true"
+        android:background="@color/gray"
+        android:textColor="@color/blue_gray"
+        android:gravity="center" />
+
+    <TextView
+        android:id="@+id/lbl_actualizar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/gray"
+        android:padding="2dp"
+        android:textSize="7.5pt"
+        android:gravity="center"
+        android:textStyle="italic|bold"
+        android:textColor="@color/blue_gray"
+        android:layout_alignParentTop="true"
+        android:text="@string/consultas_actualizar" />
+
+
+    <ImageView
+        android:id="@+id/iv_buscar_paciente"
+        android:layout_width="97dp"
+        android:layout_height="97dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/ico_buscar_paciente" />
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/srl_elv_consultas"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/lbl_actualizar">
+
+        <ExpandableListView
+            android:id="@+id/elv_consultas_resueltas"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:visibility="gone"></ExpandableListView>
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+</RelativeLayout>

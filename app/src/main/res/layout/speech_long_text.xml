@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        tools:ignore="MissingConstraints">
+
+        <EditText android:id="@+id/ed_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="27sp"
+            android:minHeight="175dp"
+            android:textColor="@color/colorPrimaryDark"/>
+        <FrameLayout android:id="@+id/fl_microphone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="5sp"
+            android:clickable="true"
+            android:visibility="visible">
+            <!--android:background="@drawable/background_field_speech"-->
+            <Button
+                android:id="@+id/btn_speech"
+                android:layout_width="45sp"
+                android:layout_height="45sp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:background="@drawable/round_button"
+                android:drawableTop="@drawable/ic_mic"
+                android:drawableTint="@color/white"
+                android:paddingTop="10dp"
+                android:visibility="visible"/>
+        </FrameLayout>
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:orientation="horizontal"
+            android:layout_width="83dp"
+            android:layout_height="53dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical|right"
+            android:visibility="gone">
+
+            <net.gotev.speech.ui.SpeechProgressView
+                android:id="@+id/progress"
+                android:layout_width="55sp"
+                android:layout_height="44sp"
+                android:visibility="visible"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>

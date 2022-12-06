@@ -1,0 +1,944 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    android:padding="25sp"
+    android:descendantFocusability="beforeDescendants"
+    android:focusableInTouchMode="true">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:descendantFocusability="beforeDescendants"
+            android:focusableInTouchMode="true">
+
+            <LinearLayout
+                android:id="@+id/info_paciente"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4sp"
+                    android:background="@drawable/round_gray_background"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/telederma_text_view_formulario_blue"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/label_nombre" />
+
+                    <TextView
+                        android:id="@+id/id_paciente_nombre"
+                        style="@style/telederma_text_view_formulario_gray"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4sp"
+                    android:background="@drawable/round_gray_background"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/telederma_text_view_formulario_blue"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/ver_paciente_consentimiento_informado" />
+
+                    <TextView
+                        android:id="@+id/id_paciente_consentimiento_"
+                        style="@style/telederma_text_view_formulario_gray"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4sp"
+                    android:background="@drawable/round_gray_background"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/telederma_text_view_formulario_blue"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/ver_paciente_tipo_identificacion" />
+
+                    <TextView
+                        android:id="@+id/id_paciente_tipo_documento_"
+                        style="@style/telederma_text_view_formulario_gray"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/id_paciente_condicion_"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4sp"
+                    android:background="@drawable/round_gray_background"
+                    android:visibility="gone"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/telederma_text_view_formulario_blue"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/ver_paciente_condicion" />
+
+                    <TextView
+                        android:id="@+id/txt_id_paciente_condicion__"
+                        style="@style/telederma_text_view_formulario_gray"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4sp"
+                    android:background="@drawable/round_gray_background"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/telederma_text_view_formulario_blue"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/ver_paciente_numero_identificacion" />
+
+                    <TextView
+                        android:id="@+id/id_paciente_numero_identificacion_"
+                        style="@style/telederma_text_view_formulario_gray"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4sp"
+                    android:background="@drawable/round_gray_background"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/telederma_text_view_formulario_blue"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/ver_paciente_fecha_nacimiento" />
+
+                    <TextView
+                        android:id="@+id/id_paciente_fecha_nacimiento_info"
+                        style="@style/telederma_text_view_formulario_gray"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4sp"
+                    android:background="@drawable/round_gray_background"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txt_paciente_sexo"
+                        style="@style/telederma_text_view_formulario_blue"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/ver_paciente_sexo" />
+
+                    <TextView
+                        android:id="@+id/id_paciente_sexo"
+                        style="@style/telederma_text_view_formulario_gray"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <!--<LinearLayout-->
+                <!--android:id="@+id/id_terminos_condiciones"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:gravity="left">-->
+
+                <!--<CheckBox-->
+                    <!--android:id="@+id/id_paciente_consentimiento"-->
+                    <!--android:text="@string/nueva_consulta_registro_consentimiento_informado"-->
+                    <!--android:textSize="14dp"-->
+                    <!--android:textColor="@color/grayDark"-->
+                    <!--android:theme="@style/checkBoxStyle"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content" />-->
+
+            <!--</LinearLayout>-->
+
+            <!--<Space-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="16sp" />-->
+
+            <TextView
+                android:id="@+id/txt_paciente_primer_nombre"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/nueva_consulta_registro_primer_nombre"
+                style="@style/telederma_text_view_label"
+                android:layout_marginTop="16sp" />
+
+            <EditText
+                android:id="@+id/id_paciente_primer_nombre"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:inputType="textCapWords|textPersonName"
+                android:imeOptions="actionNext"
+                android:hint="@string/nueva_consulta_registro_ingrese_primer_nombre" />
+
+            <TextView
+                android:id="@+id/txt_paciente_segundo_nombre"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/nueva_consulta_registro_segundo_nombre"
+                style="@style/telederma_text_view_label"
+                android:layout_marginTop="16sp" />
+
+            <EditText
+                android:id="@+id/id_paciente_segundo_nombre"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:inputType="textCapWords|textPersonName"
+                android:imeOptions="actionNext"
+                android:hint="@string/nueva_consulta_registro_ingrese_segundo_nombre" />
+
+            <TextView
+                android:id="@+id/txt_paciente_primer_apellido"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/nueva_consulta_registro_primer_apellido"
+                style="@style/telederma_text_view_label"
+                android:layout_marginTop="16sp" />
+
+            <EditText
+                android:id="@+id/id_paciente_primer_apellido"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:inputType="textCapWords|textPersonName"
+                android:imeOptions="actionNext"
+                android:hint="@string/nueva_consulta_registro_ingrese_primer_apellido" />
+
+            <TextView
+                android:id="@+id/txt_paciente_segundo_apellido"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/nueva_consulta_registro_segundo_apellido"
+                style="@style/telederma_text_view_label"
+                android:layout_marginTop="16sp" />
+
+            <EditText
+                android:id="@+id/id_paciente_segundo_apellido"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:inputType="textCapWords|textPersonName"
+                android:imeOptions="actionNext"
+                android:hint="@string/nueva_consulta_registro_ingrese_segundo_apellido" />
+
+            <TextView
+                android:id="@+id/txt_paciente_fecha_nacimiento"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/nueva_consulta_registro_fecha_nacimiento"
+                style="@style/telederma_text_view_label"
+                android:layout_marginTop="16sp" />
+
+            <EditText
+                android:id="@+id/id_paciente_fecha_nacimiento"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:clickable="true"
+                android:editable="false"
+                android:focusable="false"
+                android:imeOptions="actionNext"
+                android:hint="@string/nueva_consulta_registro_ingrese_fecha_nacimietno" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="16sp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:layout_marginRight="2sp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/nueva_consulta_registro_edad"
+                        style="@style/telederma_text_view_label" />
+
+                    <EditText
+                        android:id="@+id/id_paciente_edad"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="0dp"
+                        android:inputType="numberPassword|textVisiblePassword"
+                        android:imeOptions="actionNext"
+                        android:hint="@string/nueva_consulta_registro_ingrese_edad" />
+                    <!--android:inputType="numberPassword|textVisiblePassword"-->
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="2sp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/nueva_consulta_registro_unidad_medida"
+                        style="@style/telederma_text_view_label" />
+
+                    <Spinner
+                        android:background="@drawable/spinner_states"
+                        android:id="@+id/id_paciente_unidad_medida"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/txt_tipo_identificacion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/telederma_text_view_label"
+                android:textColor="@color/colorPrimaryDark"
+                android:text="@string/nueva_consulta_registro_tipo_identificacion"
+                android:layout_marginTop="16sp"/>
+
+            <Spinner
+                android:background="@drawable/spinner_states"
+                android:id="@+id/id_paciente_tipo_documento"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/txt_id_paciente_condicion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/telederma_text_view_label"
+                android:textColor="@color/colorPrimaryDark"
+                android:text="@string/nueva_consulta_registro_condicion"
+                android:layout_marginTop="16sp"
+                android:visibility="gone" />
+
+
+            <Spinner
+                android:background="@drawable/spinner_states"
+                android:id="@+id/id_paciente_condicion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/txt_number_inpec"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/nueva_consulta_registro_numero_inpec"
+                style="@style/telederma_text_view_label"
+                android:layout_marginTop="16sp"
+                android:visibility="gone" />
+
+            <EditText
+                android:id="@+id/id_paciente_number_inpec"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:inputType="numberPassword|textVisiblePassword"
+                android:imeOptions="actionNext"
+                android:hint="@string/nueva_consulta_registro_ingrese_numero_inpec"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/txt_paciente_numero_identificacion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/nueva_consulta_registro_numero_identificacion"
+                style="@style/telederma_text_view_label"
+                android:layout_marginTop="16sp" />
+
+            <EditText
+                android:id="@+id/id_paciente_numero_identificacion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:imeOptions="actionNext"
+                android:hint="@string/nueva_consulta_registro_ingrese_numero_identificacion" />
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="16sp">
+
+                <TextView
+                    android:id="@+id/txt_paciente_opcion_sexo_"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/nueva_consulta_registro_sexo"
+                    style="@style/telederma_text_view_label" />
+
+
+                <LinearLayout
+                    android:id="@+id/txt_paciente_opcion_sexo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+                        android:id="@+id/id_paciente_opcion_sexo"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+
+                    </RadioGroup>
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/nueva_consulta_registro_estado_civil"
+                style="@style/telederma_text_view_label"
+                android:layout_marginTop="16sp" />
+
+
+            <Spinner
+                android:background="@drawable/spinner_states"
+                android:id="@+id/id_paciente_estado_civil"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+
+
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/nueva_consulta_registro_ocupacion"
+                style="@style/telederma_text_view_label"
+                android:layout_marginTop="16sp" />
+
+            <EditText
+                android:id="@+id/id_paciente_ocupacion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:inputType="textCapWords"
+                android:imeOptions="actionNext"
+                android:hint="@string/nueva_consulta_registro_ingrese_ocupacion" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/nueva_consulta_registro_celular"
+                style="@style/telederma_text_view_label"
+                android:layout_marginTop="16sp" />
+
+            <EditText
+                android:id="@+id/id_paciente_celular"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:inputType="numberPassword|textVisiblePassword"
+                android:imeOptions="actionNext"
+                android:hint="@string/nueva_consulta_registro_ingrese_celular" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/nueva_consulta_registro_email"
+                style="@style/telederma_text_view_label"
+                android:layout_marginTop="16sp" />
+
+
+            <EditText
+                android:id="@+id/id_paciente_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:inputType="textEmailAddress"
+                android:imeOptions="actionNext"
+                android:hint="@string/nueva_consulta_registro_ingrese_email" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/nueva_consulta_registro_direccion_domicilio"
+                style="@style/telederma_text_view_label"
+                android:layout_marginTop="16sp" />
+
+
+            <EditText
+                android:id="@+id/id_paciente_direccion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:inputType="textCapWords"
+                android:imeOptions="actionNext"
+                android:hint="@string/nueva_consulta_registro_ingrese_direccion_domicilio" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/nueva_consulta_registro_departamento"
+                style="@style/telederma_text_view_label"
+                android:layout_marginTop="16sp" />
+
+
+            <Spinner
+                android:background="@drawable/spinner_states"
+                android:id="@+id/id_paciente_departamento"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/nueva_consulta_registro_municipio"
+                style="@style/telederma_text_view_label"
+                android:layout_marginTop="16sp" />
+
+
+            <Spinner
+                android:background="@drawable/spinner_states"
+                android:id="@+id/id_paciente_municipio"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="16sp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/nueva_consulta_registro_zona_de_residencia"
+                    style="@style/telederma_text_view_label" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+                        android:id="@+id/id_paciente_opcion_residencial"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+
+                    </RadioGroup>
+                </LinearLayout>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16sp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/nueva_consulta_registro_persona_acompanante"
+                    style="@style/telederma_text_view_label" />
+
+                <android.support.v7.widget.SwitchCompat
+                    android:id="@+id/acompanante"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginEnd="13dp"
+                    android:thumb="@drawable/switch_selector"
+                    app:track="@drawable/switch_track" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/id_acompanante"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/nueva_consulta_registro_persona_acompanante_nombre"
+                    style="@style/telederma_text_view_label" />
+
+
+                <EditText
+                    android:id="@+id/id_paciente_acompanante_nombre"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="0dp"
+                    android:inputType="textCapWords|textPersonName"
+                    android:imeOptions="actionNext"
+                    android:hint="@string/nueva_consulta_registro_ingrese_nombre_acompanante" />
+
+                <!--<Space
+                    android:layout_width="match_parent"
+                    android:layout_height="16sp" />-->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/nueva_consulta_registro_celular"
+                    style="@style/telederma_text_view_label"
+                    android:layout_marginTop="16sp" />
+
+
+                <EditText
+                    android:id="@+id/id_paciente_acompanante_celular"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="0dp"
+                    android:inputType="numberPassword|textVisiblePassword"
+                    android:imeOptions="actionNext"
+                    android:hint="@string/nueva_consulta_registro_ingrese_celular_acompanante" />
+
+
+            </LinearLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16sp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/nueva_consulta_registro_persona_responsable"
+                    style="@style/telederma_text_view_label" />
+
+
+                <android.support.v7.widget.SwitchCompat
+                    android:id="@+id/responsable"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginEnd="13dp"
+                    android:thumb="@drawable/switch_selector"
+                    app:track="@drawable/switch_track" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/id_responsable"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/nueva_consulta_registro_persona_responsable_nombre"
+                    style="@style/telederma_text_view_label" />
+
+
+                <EditText
+                    android:id="@+id/id_paciente_responsable_nombre"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="0dp"
+                    android:inputType="textCapWords|textPersonName"
+                    android:imeOptions="actionNext"
+                    android:hint="@string/nueva_consulta_registro_ingrese_nombre_responsable" />
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/nueva_consulta_registro_celular"
+                    style="@style/telederma_text_view_label"
+                    android:layout_marginTop="16sp" />
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="16sp" />
+
+                <EditText
+                    android:id="@+id/id_paciente_responsable_nombre_celular"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="0dp"
+                    android:inputType="numberPassword|textVisiblePassword"
+                    android:imeOptions="actionNext"
+                    android:hint="@string/nueva_consulta_registro_ingrese_celular_responsable" />
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/nueva_consulta_registro_parentesco"
+                    style="@style/telederma_text_view_label"
+                    android:layout_marginTop="16sp" />
+
+
+                <EditText
+                    android:id="@+id/id_paciente_responsable_parentesco"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="0dp"
+                    android:inputType="textCapWords"
+                    android:imeOptions="actionNext"
+                    android:hint="@string/nueva_consulta_registro_ingrese_parentesco" />
+
+
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/nueva_consulta_registro_tipo_usuario"
+                style="@style/telederma_text_view_label"
+                android:layout_marginTop="16sp" />
+
+
+            <Spinner
+                android:id="@+id/id_paciente_tipo_usuario"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/spinner_states" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/nueva_consulta_registro_asegurador"
+                style="@style/telederma_text_view_label"
+                android:layout_marginTop="16sp" />
+
+            <AutoCompleteTextView
+                android:id="@+id/id_paciente_asegurador"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Aseguradora"
+                style="@style/telederma_edit_text"></AutoCompleteTextView>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/nueva_consulta_registro_numero_autorizacion"
+                style="@style/telederma_text_view_label"
+                android:layout_marginTop="16sp" />
+
+
+            <EditText
+                android:id="@+id/id_paciente_numero_autorizacion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:inputType="numberPassword|textVisiblePassword"
+                android:imeOptions="actionNext"
+                android:hint="@string/nueva_consulta_registro_ingrese_numero_autorizacion" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/nueva_consulta_registro_finalidad_consulta"
+                style="@style/telederma_text_view_label"
+                android:layout_marginTop="16sp"
+                android:visibility="gone"/>
+
+
+            <Spinner
+                android:id="@+id/id_paciente_finalidad"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/spinner_states"
+                android:visibility="gone"
+                />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/nueva_consulta_registro_causa_externa"
+                style="@style/telederma_text_view_label"
+                android:layout_marginTop="16sp" />
+
+
+            <Spinner
+                android:background="@drawable/spinner_states"
+                android:id="@+id/id_paciente_causa_externa"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="16sp" />
+
+            <LinearLayout
+                android:id="@+id/id_terminos_condiciones"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left">
+
+                <CheckBox
+                    android:id="@+id/id_paciente_consentimiento"
+                    android:text="@string/nueva_consulta_registro_consentimiento_informado"
+                    android:textSize="14dp"
+                    style="@style/telederma_text_view_label"
+                    android:theme="@style/checkBoxStyle"
+                    android:checked="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_weight="5"
+                android:layout_marginTop="16sp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:id="@+id/indice_pagina">
+
+                    <Button
+                        android:id="@+id/btn1"
+                        android:layout_width="15sp"
+                        android:layout_height="15sp"
+                        android:layout_margin="5sp"
+                        android:background="@drawable/circulo_azul" />
+
+                    <Button
+                        android:id="@+id/btn2"
+                        android:layout_width="15sp"
+                        android:layout_height="15sp"
+                        android:layout_margin="5sp"
+                        android:background="@drawable/circulo_gris" />
+
+                    <Button
+                        android:id="@+id/btn3"
+                        android:layout_width="15sp"
+                        android:layout_height="15sp"
+                        android:layout_margin="5sp"
+                        android:background="@drawable/circulo_gris" />
+
+
+                    <Button
+                        android:id="@+id/btn4"
+                        android:layout_width="15sp"
+                        android:layout_height="15sp"
+                        android:layout_margin="5sp"
+                        android:background="@drawable/circulo_gris" />
+
+                    <Button
+                        android:id="@+id/btn5"
+                        android:layout_width="15sp"
+                        android:layout_height="15sp"
+                        android:layout_margin="5sp"
+                        android:background="@drawable/circulo_gris" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingLeft="15sp"
+                    android:paddingRight="15sp">
+
+                    <Button
+                        android:id="@+id/btn_registrar_paciente"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        style="@style/telederma_button_dark"
+                        android:text="@string/nueva_consulta_registro_consulta_siguiente" />
+
+                    <Button
+                        android:id="@+id/btn_resumen"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        style="@style/telederma_button_dark"
+                        android:text="@string/nueva_consulta_registro_consulta_resumen"
+                        android:visibility="gone" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+</FrameLayout>

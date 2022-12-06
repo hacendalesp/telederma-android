@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.telederma.gov.co">
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.REORDER_TASKS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <uses-permission
+        android:name="android.permission.WRITE_SETTINGS"
+        tools:ignore="ProtectedPermissions" />
+
+    <application
+        android:name=".TeledermaApplication"
+        android:clearTaskOnLaunch="true"
+        android:hardwareAccelerated="true"
+        android:icon="@drawable/ic_launcher_150"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:launchMode="singleTask"
+        android:stateNotNeeded="true"
+        android:supportsRtl="true"
+        android:usesCleartextTraffic="true"
+        android:theme="@style/AppTheme.NoActionBar">
+
+        <activity android:name=".LogActivity" /> <!-- android:screenOrientation="portrait" -->
+        <!--android:excludeFromRecents="true"-->
+            <!--android:launchMode="singleTask"-->
+
+
+
+        <activity
+            android:name=".FallidaActivity"
+            android:noHistory="true"
+            android:screenOrientation="nosensor">
+
+
+        </activity>
+        <activity
+            android:name=".SplashActivity"
+            android:noHistory="true"
+            android:screenOrientation="nosensor">
+
+            <!-- android:launchMode="singleTask" -->
+            <!-- android:stateNotNeeded="true" -->
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+                <category android:name="android.intent.category.HOME" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <!-- Lineas para creacion de launcher -->
+                <!-- <category android:name="android.intent.category.HOME" /> -->
+                <!-- <category android:name="android.intent.category.DEFAULT" /> -->
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".LoginActivity"
+            android:screenOrientation="portrait"
+            android:launchMode="singleTask"
+            android:theme="@style/AppTheme.NoActionBar"/>
+
+        <activity
+            android:name=".FirmaDigitalActivity"
+            android:screenOrientation="landscape"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.telederma.gov.co.FirmaDigitalActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:windowSoftInputMode="adjustPan"
+            android:screenOrientation="portrait"
+            ></activity>
+        <activity
+            android:name=".Camara"
+            android:hardwareAccelerated="true"
+            android:screenOrientation="portrait"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.telederma.gov.co.Camara" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ImagenDermatoscopia"
+            android:hardwareAccelerated="true"
+            android:screenOrientation="portrait"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.telederma.gov.co.ImagenDermatoscopia" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".CamaraDermatoscopia"
+            android:hardwareAccelerated="true"
+            android:screenOrientation="portrait"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.telederma.gov.co.CamaraDermatoscopia" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ImagenesCamaraDermatoscopia"
+            android:hardwareAccelerated="true"
+            android:screenOrientation="portrait"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.telederma.gov.co.ImagenesCamaraDermatoscopia" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ImagenesAnexoCamara"
+            android:screenOrientation="portrait"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.telederma.gov.co.ImagenesAnexoCamara" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ReproducirVideoActivity"
+            android:screenOrientation="landscape"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.telederma.gov.co.ReproducirVideoActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity> <!-- <activity -->
+        <!-- android:name=".AndroidDatabaseManager" -->
+        <!-- android:screenOrientation="portrait" -->
+        <!-- /> -->
+        <!-- android:theme="@style/AppTheme.NoActionBar" -->
+        <receiver
+            android:name=".receivers.ConnectivityReceiver"
+            android:enabled="true"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name=".receivers.BootReceiver"
+            android:directBootAware="true"
+            android:enabled="true"
+            tools:ignore="UnusedAttribute"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.LOCKED_BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name=".services.SincronizacionServiceJob"
+            android:directBootAware="true"
+            android:permission="android.permission.BIND_JOB_SERVICE" />
+
+        <receiver
+            android:name=".receivers.SincronizacionBroadcast"
+            android:directBootAware="true"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.USER_PRESENT" />
+                <action android:name="android.intent.action.SCREEN_ON" />
+                <action android:name="android.intent.action.LOCKED_BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+
+        <service android:name=".services.LogoutService" /> <!-- <service -->
+        <!-- android:name=".services.SincronizacionService" -->
+        <!-- android:enabled="true" /> -->
+        <!-- <receiver -->
+        <!-- android:name=".receivers.SincronizacionBroadcast" -->
+        <!-- android:enabled="true" -->
+        <!-- android:exported="false" -->
+        <!-- android:label="RestartServiceWhenStopped"> -->
+        <!-- <intent-filter> -->
+        <!-- <action android:name="android.intent.action.BOOT_COMPLETED" /> -->
+        <!-- </intent-filter> -->
+        <!-- </receiver> -->
+        <activity android:name=".IntroActivity" />
+    </application>
+
+</manifest>

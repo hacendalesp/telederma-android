@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:contexto="com.telederma.gov.co.fragments.NuevoUsuarioFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/background_title"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="11dp"
+            android:text="@string/login_soy_nuevo_title"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="16sp"
+        android:paddingRight="16sp"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/img_profile"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/img_perfil" />
+
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:src="@drawable/circle" />
+                </FrameLayout>
+
+                <android.support.design.widget.FloatingActionButton
+                    android:id="@+id/fab_capturar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:fabSize="mini"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:src="@drawable/ic_photo_camera"
+                    android:tint="@color/white"
+                    app:backgroundTint="@color/colorPrimary" />
+            </RelativeLayout>
+
+            <TextView
+                style="@style/telederma_text_view_label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16sp"
+                android:text="@string/label_usuario" />
+
+            <EditText
+                android:id="@+id/txt_documento"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:inputType="numberPassword|textVisiblePassword"
+                android:imeOptions="actionNext"
+                android:hint="@string/soy_nuevo_usuario_hint" />
+
+            <TextView
+                style="@style/telederma_text_view_label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16sp"
+                android:text="@string/label_confirmar_documento" />
+
+            <EditText
+                android:id="@+id/txt_documento_confirmar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:inputType="numberPassword|textVisiblePassword"
+                android:imeOptions="actionNext"
+                android:hint="@string/soy_nuevo_usuario_hint" />
+
+            <TextView
+                style="@style/telederma_text_view_label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16sp"
+                android:text="@string/label_tipo_profesional" />
+
+            <Spinner
+                android:id="@+id/spn_tipo_profesional"
+                android:background="@drawable/spinner_states"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                style="@style/telederma_text_view_label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16sp"
+                android:text="@string/label_tarjeta_profesional" />
+
+            <EditText
+                android:id="@+id/txt_nro_tarj_prof"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="numberPassword|textVisiblePassword"
+                android:imeOptions="actionNext"
+                android:hint="@string/soy_nuevo_tarjeta_profesional_hint" />
+
+            <TextView
+                style="@style/telederma_text_view_label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16sp"
+                android:text="@string/label_nombre_s" />
+
+            <EditText
+                android:id="@+id/txt_nombres"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textCapWords|textPersonName"
+                android:imeOptions="actionNext"
+                android:hint="@string/soy_nuevo_nombre_hint" />
+
+            <TextView
+                style="@style/telederma_text_view_label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16sp"
+                android:text="@string/label_apellido_s" />
+
+            <EditText
+                android:id="@+id/txt_apellidos"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:inputType="textCapWords|textPersonName"
+                android:imeOptions="actionNext"
+                android:hint="@string/soy_nuevo_apellido_hint" />
+
+            <TextView
+                style="@style/telederma_text_view_label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16sp"
+                android:text="@string/label_celular" />
+
+            <EditText
+                android:id="@+id/txt_nro_celular"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:inputType="phone"
+                android:digits="0123456789"
+                android:imeOptions="actionNext"
+                android:hint="@string/soy_nuevo_celular_hint" />
+
+            <TextView
+                style="@style/telederma_text_view_label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16sp"
+                android:text="@string/label_correo" />
+
+            <EditText
+                android:id="@+id/txt_correo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:inputType="textEmailAddress"
+                android:imeOptions="actionNext"
+                android:hint="@string/soy_nuevo_correo_hint" />
+
+            <TextView
+                style="@style/telederma_text_view_label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16sp"
+                android:text="@string/label_contrasena" />
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:hintEnabled="false"
+                app:passwordToggleEnabled="true"
+                android:layout_marginBottom="16dp">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/txt_contrasena"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPassword"
+                    android:imeOptions="actionNext"
+                    android:hint="@string/login_contrasena_hint"/>
+            </android.support.design.widget.TextInputLayout>
+
+            <!--<EditText-->
+                <!--android:id="@+id/txt_contrasena"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:inputType="textPassword"-->
+                <!--android:imeOptions="actionNext"-->
+                <!--android:hint="@string/login_contrasena_hint" />-->
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/orange"
+                android:textSize="6pt"
+                android:text="@string/soy_nuevo_msj_reglas_contrasena" />
+
+            <TextView
+                style="@style/telederma_text_view_label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16sp"
+                android:text="@string/label_confirmar_contrasena" />
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:hintEnabled="false"
+                app:passwordToggleEnabled="true"
+                android:layout_marginBottom="16dp">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/txt_contrasena_confirmar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPassword"
+                    android:imeOptions=""
+                    android:hint="@string/soy_nuevo_confirmar_contrasena_hint"/>
+            </android.support.design.widget.TextInputLayout>
+
+            <!--<EditText-->
+                <!--android:id="@+id/txt_contrasena_confirmar"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:inputType="textPassword"-->
+                <!--android:imeOptions=""-->
+                <!--android:hint="@string/soy_nuevo_confirmar_contrasena_hint" />-->
+
+            <CheckBox
+                android:id="@+id/chk_aceptar_terminos"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textSize="7pt"
+                android:checked="true"
+                android:textAlignment="center"
+                android:textColor="@color/grayDark"
+                android:text="@string/soy_nuevo_aceptar_terminos" />
+
+            <LinearLayout
+                android:id="@+id/btn_ver_terminos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8sp"
+                android:layout_gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="2dp"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textAlignment="center"
+                    android:textSize="7pt"
+                    android:text="@string/soy_nuevo_ver_terminos" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="2px"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginBottom="2dp"
+                    android:background="@color/colorPrimaryDark"></LinearLayout>
+
+            </LinearLayout>
+
+            <Button
+                style="@style/telederma_button"
+                android:id="@+id/btn_firmar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16sp"
+                android:layout_gravity="center"
+                android:text="@string/label_firmar" />
+
+            <Button
+                style="@style/telederma_button_light"
+                android:id="@+id/btn_registrarme"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16sp"
+                android:layout_marginBottom="16sp"
+                android:layout_gravity="center"
+                android:text="@string/soy_nuevo_registrarme" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

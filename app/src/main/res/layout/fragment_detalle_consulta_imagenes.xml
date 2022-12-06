@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    tools:contexto="com.telederma.gov.co.fragments.DetalleConsultaImagenesFragment">
+
+    <LinearLayout
+        android:id="@+id/lay_controles"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/telederma_text_view_formulario_blue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8sp"
+            android:text="@string/detalle_consulta_controles"
+            android:textStyle="bold" />
+
+        <Spinner
+            android:id="@+id/spn_controles_consulta"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/spinner_states" />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/lay_respuesta"
+        android:layout_below="@id/lay_controles"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:scrollbars="none"
+        android:visibility="visible">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/lbl_nombre_consulta"
+            style="@style/telederma_text_view_formulario_blue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:textSize="8pt" />
+
+        <TextView
+            android:id="@+id/lbl_fecha_consulta"
+            style="@style/telederma_text_view_formulario_blue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:textSize="8pt" />
+
+        <com.telederma.gov.co.views.ExtendableGridView
+            android:id="@+id/grv_imagenes_consulta"
+            android:columnWidth="25dp"
+            android:layout_below="@id/lbl_nombre_consulta"
+            android:layout_marginTop="16sp"
+            android:gravity="center"
+            android:numColumns="3"
+            android:stretchMode="columnWidth"
+            android:horizontalSpacing="8sp"
+            android:verticalSpacing="8sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"></com.telederma.gov.co.views.ExtendableGridView>
+
+    </RelativeLayout>
+
+</ScrollView>
+</RelativeLayout>

@@ -1,0 +1,218 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    android:padding="25sp"
+    android:descendantFocusability="beforeDescendants"
+    android:focusableInTouchMode="true">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/ll_content_bottom"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:descendantFocusability="beforeDescendants"
+            android:focusableInTouchMode="true">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/nueva_consulta_registro_consulta_anamnesis"
+                style="@style/telederma_text_view_label"
+                android:gravity="center" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_marginTop="16sp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/nueva_consulta_registro_peso"
+                    style="@style/telederma_text_view_label" />
+
+
+                <EditText
+                    android:id="@+id/weight"
+                    android:layout_width="150dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="0dp"
+                    android:maxLength="4"
+                    android:text=""
+                    android:inputType="number"
+                    android:imeOptions="actionNext"
+                    android:hint="@string/nueva_consulta_registro_consulta_ingrese_peso" />
+            </LinearLayout>
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/telederma_text_view_label"
+                android:text="@string/historia_enfermeria_diagnostico_etiologico"
+                android:layout_marginTop="16sp"
+                android:id="@+id/txt_etimologico" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:id="@+id/id_diagnosticos_etimologico"
+                android:layout_marginLeft="10dp">
+
+            </LinearLayout>
+
+
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/gray_background"
+            android:padding="10dp"
+            android:layout_marginBottom="20dp"
+            android:orientation="vertical"
+            android:visibility="gone"
+            android:id="@+id/id_nota"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:layout_marginBottom="10dp"
+                android:text="@string/historia_enfermeria_diagnostico_nota" />
+        </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:id="@+id/linear_intensidad"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/historia_enfermeria_diagnostico_intensidad_del_dolor"
+                    android:textSize="16sp"
+                    style="@style/telederma_text_view_label" />
+
+                <SeekBar
+                    android:id="@+id/id_intensidad"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    android:backgroundTint="@color/colorPrimaryDark"
+                    android:progressBackgroundTint="@color/colorPrimary"
+                    android:progressBackgroundTintMode="add"
+                    android:layout_marginTop="5dp"
+                    android:progress="0"
+                    android:thumbTintMode="src_in"
+                    android:max="100" />
+                <TextView
+                    android:id="@+id/count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0/100"
+                    android:layout_gravity="center"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+
+
+
+      </LinearLayout>
+
+    </ScrollView>
+
+    <LinearLayout android:id="@+id/ll_content_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical"
+        android:layout_weight="5">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+
+            <Button
+                android:id="@+id/btn2"
+                android:layout_width="15sp"
+                android:layout_height="15sp"
+                android:layout_margin="5sp"
+                android:background="@drawable/circulo_gris" />
+
+            <Button
+                android:id="@+id/btn1"
+                android:layout_width="15sp"
+                android:layout_height="15sp"
+                android:layout_margin="5sp"
+                android:background="@drawable/circulo_azul" />
+
+
+            <Button
+                android:id="@+id/btn3"
+                android:layout_width="15sp"
+                android:layout_height="15sp"
+                android:layout_margin="5sp"
+                android:background="@drawable/circulo_gris" />
+
+
+            <Button
+                android:id="@+id/btn4"
+                android:layout_width="15sp"
+                android:layout_height="15sp"
+                android:layout_margin="5sp"
+                android:background="@drawable/circulo_gris" />
+
+            <Button
+                android:id="@+id/btn5"
+                android:layout_width="15sp"
+                android:layout_height="15sp"
+                android:layout_margin="5sp"
+                android:background="@drawable/circulo_gris" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="15sp"
+            android:paddingRight="15sp">
+
+            <Button
+                android:id="@+id/btn_registrar_historia"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/telederma_button_dark"
+                android:text="@string/nueva_consulta_registro_consulta_siguiente" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</RelativeLayout>

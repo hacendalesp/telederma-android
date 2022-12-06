@@ -1,0 +1,961 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16sp"
+    android:paddingRight="16sp"
+    android:paddingTop="8sp"
+    android:paddingBottom="8sp"
+    android:scrollbars="none"
+    tools:contexto="com.telederma.gov.co.fragments.DetalleConsultaMedicaHistoriaClinicaFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="8sp"
+        android:orientation="vertical">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8sp">
+
+            <TableRow>
+
+                <TextView
+                    style="@style/telederma_text_view_formulario_blue"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/detalle_consulta_label_nombre" />
+
+                <TextView
+                    android:id="@+id/lbl_nombre_paciente"
+                    style="@style/telederma_text_view_formulario_gray"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:ellipsize="marquee"
+                    android:fadingEdge="horizontal"
+                    android:marqueeRepeatLimit="marquee_forever"
+                    android:scrollHorizontally="true"
+                    android:singleLine="true"
+                    android:clickable="true"
+                    android:paddingLeft="5dp"
+                     />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    style="@style/telederma_text_view_formulario_blue"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/detalle_consulta_label_edad" />
+
+                <TextView
+                    android:id="@+id/lbl_edad_paciente"
+                    style="@style/telederma_text_view_formulario_gray"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="5dp"
+                     />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    style="@style/telederma_text_view_formulario_blue"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/detalle_consulta_label_documento" />
+
+                <TextView
+                    android:id="@+id/lbl_identificacion_paciente"
+                    style="@style/telederma_text_view_formulario_gray"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="5dp"
+                     />
+            </TableRow>
+
+
+            <TableRow android:visibility="gone">
+
+                <TextView
+                    style="@style/telederma_text_view_formulario_blue"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/detalle_consulta_label_fecha" />
+
+                <TextView
+                    android:id="@+id/lbl_fecha_paciente"
+                    style="@style/telederma_text_view_formulario_gray"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="5dp"
+                     />
+            </TableRow>
+
+        </TableLayout>
+
+        <TextView
+            android:id="@+id/btn_ver_mas_datos_paciente"
+            style="@style/telederma_text_view_formulario_blue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="4sp"
+            android:textAlignment="textEnd"
+            android:text="@string/ver_mas" />
+
+        <FrameLayout
+            android:id="@+id/datos_paciente_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/lbl_fecha_paciente">
+
+        </FrameLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16sp"
+            android:background="@color/colorPrimaryDark"
+            android:textSize="1sp" />
+
+        <LinearLayout
+            android:id="@+id/ll_content_control"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8sp"
+            android:background="@drawable/spinner_states"
+            android:orientation="vertical">
+            <TextView
+                style="@style/telederma_text_view_formulario_blue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8sp"
+                android:text="@string/detalle_consulta_controles"
+                android:textStyle="bold" />
+
+            <Spinner
+                android:id="@+id/spn_controles_consulta"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/spinner_states" />
+
+            <LinearLayout
+                android:id="@+id/lay_info_control"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8sp"
+                android:visibility="gone"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8sp"
+                    android:background="@color/grayLight"
+                    android:textSize="1sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/telederma_text_view_formulario_blue"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/detalle_consulta_medico" />
+
+                    <TextView
+                        android:id="@+id/tv_name_medico_control"
+                        style="@style/telederma_text_view_formulario_gray"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingStart="5dp"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true"
+                        android:ellipsize="marquee"
+                        android:fadingEdge="horizontal"
+                        android:marqueeRepeatLimit="marquee_forever"
+                        android:scrollHorizontally="true"
+                        android:singleLine="true"
+                        android:clickable="true"
+                        android:text="@string/label_no_aplica"
+                        />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        style="@style/telederma_text_view_formulario_blue"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/detalle_consulta_nro_registro" />
+
+                    <TextView
+                        android:id="@+id/tv_medico_control_number_professional_card"
+                        style="@style/telederma_text_view_formulario_gray"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:text="@string/label_no_aplica" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/telederma_text_view_formulario_blue"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/detalle_consulta_fecha" />
+
+                    <TextView
+                        android:id="@+id/tv_fecha_control"
+                        style="@style/telederma_text_view_formulario_gray"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:text="@string/label_no_aplica" />
+
+                </LinearLayout>
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8sp"
+                    android:background="@color/colorPrimaryDark"
+                    android:textSize="1sp" />
+
+
+
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4sp"
+                    android:background="@drawable/round_gray_background"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/telederma_text_view_formulario_blue"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/control_medico_mejoria_subjetiva" />
+
+                    <TextView
+                        android:id="@+id/lbl_mejoria_subjetiva"
+                        style="@style/telederma_text_view_formulario_gray"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                         />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4sp"
+                    android:background="@drawable/round_gray_background"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/telederma_text_view_formulario_blue"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/control_medico_hizo_tratamiento" />
+
+                    <TextView
+                        android:id="@+id/lbl_hizo_tratamiento"
+                        style="@style/telederma_text_view_formulario_gray"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                         />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4sp"
+                    android:background="@drawable/round_gray_background"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/telederma_text_view_formulario_blue"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/control_medico_tolero_medicamentos" />
+
+                    <TextView
+                        android:id="@+id/lbl_tolero_medicamentos"
+                        style="@style/telederma_text_view_formulario_gray"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                         />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4sp"
+                    android:background="@drawable/round_gray_background"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/telederma_text_view_formulario_blue"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/control_medico_examen_fisico" />
+
+                    <TextView
+                        android:id="@+id/lbl_descripcion_clinica"
+                        style="@style/telederma_text_view_formulario_gray"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                         />
+
+                    <com.telederma.gov.co.views.ReproductorAudioView
+                        android:id="@+id/rav_audio_clinica"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8sp"
+                    android:background="@drawable/round_gray_background"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/telederma_text_view_formulario_blue"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/control_medico_anexos" />
+
+                    <TextView
+                        android:id="@+id/lbl_control_anexos"
+                        style="@style/telederma_text_view_formulario_gray"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+                    <com.telederma.gov.co.views.ExtendableGridView
+                        android:id="@+id/grv_control_imagenes_anexos"
+                        android:columnWidth="25dp"
+                        android:layout_marginTop="8sp"
+                        android:gravity="center"
+                        android:numColumns="3"
+                        android:stretchMode="columnWidth"
+                        android:horizontalSpacing="8sp"
+                        android:verticalSpacing="8sp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+                    <com.telederma.gov.co.views.ReproductorAudioView
+                        android:id="@+id/rav_control_anexo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8sp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8sp"
+            android:background="@color/grayLight"
+            android:textSize="1sp" />
+
+        <TextView
+            style="@style/telederma_text_view_formulario_blue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8sp"
+            android:layout_marginBottom="8sp"
+            android:text="@string/detalle_consulta_historia_paciente"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8sp"
+            android:background="@color/grayLight"
+            android:textSize="1sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/telederma_text_view_formulario_blue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/detalle_consulta_medico" />
+
+            <TextView
+                android:id="@+id/tv_name_medico"
+                style="@style/telederma_text_view_formulario_gray"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="5dp"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:ellipsize="marquee"
+                android:fadingEdge="horizontal"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:scrollHorizontally="true"
+                android:singleLine="true"
+                android:clickable="true"
+                android:text="@string/label_no_aplica"
+                />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                style="@style/telederma_text_view_formulario_blue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/detalle_consulta_nro_registro" />
+
+            <TextView
+                android:id="@+id/tv_number_professional_card"
+                style="@style/telederma_text_view_formulario_gray"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="5dp"
+                android:text="@string/label_no_aplica" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/telederma_text_view_formulario_blue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/detalle_consulta_fecha" />
+
+            <TextView
+                android:id="@+id/tv_fecha_consulta"
+                style="@style/telederma_text_view_formulario_gray"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="5dp"
+                android:text="@string/label_no_aplica" />
+
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8sp"
+            android:background="@color/colorPrimaryDark"
+            android:textSize="1sp" />
+
+
+
+
+        <LinearLayout android:id="@+id/ll_content_requirements"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4sp"
+            android:background="@drawable/round_gray_background"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/telederma_text_view_formulario_blue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:layout_marginBottom="16dp"
+                android:text="@string/detalle_consulta_requerimientos" />
+
+
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4sp"
+            android:background="@drawable/round_gray_background"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/telederma_text_view_formulario_blue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/detalle_consulta_peso" />
+
+            <TextView
+                android:id="@+id/lbl_weight"
+                style="@style/telederma_text_view_formulario_gray"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4sp"
+            android:background="@drawable/round_gray_background"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/telederma_text_view_formulario_blue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/detalle_consulta_motivo_consulta2" />
+
+            <TextView
+                android:id="@+id/lbl_motivo_consulta"
+                style="@style/telederma_text_view_formulario_gray"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4sp"
+            android:background="@drawable/round_gray_background"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/telederma_text_view_formulario_blue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/detalle_consulta_enfermedad_actual" />
+
+            <TextView
+                android:id="@+id/lbl_enfermedad_actual"
+                style="@style/telederma_text_view_formulario_gray"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4sp"
+            android:background="@drawable/round_gray_background"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/telederma_text_view_formulario_blue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/detalle_consulta_tiempo_evolucion" />
+
+            <TextView
+                android:id="@+id/lbl_tiempo_evolucion"
+                style="@style/telederma_text_view_formulario_gray"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                 />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4sp"
+            android:background="@drawable/round_gray_background"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/telederma_text_view_formulario_blue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/detalle_consulta_nro_lesiones_iniciales" />
+
+            <TextView
+                android:id="@+id/lbl_nro_lesiones_iniciales"
+                style="@style/telederma_text_view_formulario_gray"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                 />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4sp"
+            android:background="@drawable/round_gray_background"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/telederma_text_view_formulario_blue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/detalle_consulta_evolucion_lesiones" />
+
+            <TextView
+                android:id="@+id/lbl_evolucion_lesiones"
+                style="@style/telederma_text_view_formulario_gray"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                 />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4sp"
+            android:background="@drawable/round_gray_background"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/telederma_text_view_formulario_blue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/detalle_consulta_cambios_evidentes" />
+
+            <TableLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TableRow>
+
+                    <TextView
+                        style="@style/telederma_text_view_formulario_blue"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/detalle_consulta_sangran" />
+
+                    <TextView
+                        android:id="@+id/lbl_cambios_evidentes_sangran"
+                        style="@style/telederma_text_view_formulario_gray"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                         />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        style="@style/telederma_text_view_formulario_blue"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/detalle_consulta_exudan" />
+
+                    <TextView
+                        android:id="@+id/lbl_cambios_evidentes_exudan"
+                        style="@style/telederma_text_view_formulario_gray"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                         />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        style="@style/telederma_text_view_formulario_blue"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/detalle_consulta_supuran" />
+
+                    <TextView
+                        android:id="@+id/lbl_cambios_evidentes_supuran"
+                        style="@style/telederma_text_view_formulario_gray"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                         />
+                </TableRow>
+
+            </TableLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8sp"
+            android:background="@drawable/round_gray_background"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/telederma_text_view_formulario_blue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/detalle_consulta_sintomas" />
+
+            <TextView
+                android:id="@+id/lbl_sintomas"
+                style="@style/telederma_text_view_formulario_gray"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                 />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8sp"
+            android:background="@drawable/round_gray_background"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/telederma_text_view_formulario_blue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/detalle_consulta_sintomas_cambian_dia" />
+
+            <TextView
+                android:id="@+id/lbl_sintomas_cambian_dia"
+                style="@style/telederma_text_view_formulario_gray"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                 />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8sp"
+            android:background="@drawable/round_gray_background"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/telederma_text_view_formulario_blue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/detalle_consulta_otros_factores_agravan_sintomas" />
+
+            <TextView
+                android:id="@+id/lbl_otros_factores_agravan_sintomas"
+                style="@style/telederma_text_view_formulario_gray"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8sp"
+            android:background="@drawable/round_gray_background"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/telederma_text_view_formulario_blue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/detalle_consulta_antecedentes_relevantes" />
+
+            <TextView
+                android:id="@+id/lbl_antecedentes_relevantes"
+                style="@style/telederma_text_view_formulario_gray"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                 />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8sp"
+            android:background="@drawable/round_gray_background"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/telederma_text_view_formulario_blue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/detalle_consulta_tratamiento_recibido" />
+
+            <TextView
+                android:id="@+id/lbl_tratamiento_recibido"
+                style="@style/telederma_text_view_formulario_gray"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                 />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8sp"
+            android:background="@drawable/round_gray_background"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/telederma_text_view_formulario_blue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/detalle_consulta_otras_sustancias_aplicadas" />
+
+            <TextView
+                android:id="@+id/lbl_otras_sustancias_aplicadas"
+                style="@style/telederma_text_view_formulario_gray"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8sp"
+            android:background="@drawable/round_gray_background"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/telederma_text_view_formulario_blue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/detalle_consulta_efectos_tratamiento" />
+
+            <TextView
+                android:id="@+id/lbl_efectos_tratamiento"
+                style="@style/telederma_text_view_formulario_gray"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                 />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8sp"
+            android:background="@drawable/round_gray_background"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/telederma_text_view_formulario_blue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/detalle_consulta_examen_fisico" />
+
+            <TextView
+                android:id="@+id/lbl_examen_fisico"
+                style="@style/telederma_text_view_formulario_gray"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                 />
+
+            <com.telederma.gov.co.views.ReproductorAudioView
+                android:id="@+id/rav_examen_fisico"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8sp"
+            android:background="@drawable/round_gray_background"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/telederma_text_view_formulario_blue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/detalle_consulta_anexos" />
+
+            <TextView
+                android:id="@+id/lbl_anexos"
+                style="@style/telederma_text_view_formulario_gray"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                 />
+
+            <com.telederma.gov.co.views.ExtendableGridView
+                android:id="@+id/grv_imagenes_anexos"
+                android:columnWidth="25dp"
+                android:layout_marginTop="8sp"
+                android:gravity="center"
+                android:numColumns="3"
+                android:stretchMode="columnWidth"
+                android:horizontalSpacing="8sp"
+                android:verticalSpacing="8sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"></com.telederma.gov.co.views.ExtendableGridView>
+
+            <com.telederma.gov.co.views.ReproductorAudioView
+                android:id="@+id/rav_anexo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8sp"
+            android:background="@drawable/round_gray_background"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/telederma_text_view_formulario_blue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/detalle_consulta_impresion_diagnostica" />
+
+            <TextView
+                android:id="@+id/lbl_impresion_diagnostica"
+                style="@style/telederma_text_view_formulario_gray"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                 />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

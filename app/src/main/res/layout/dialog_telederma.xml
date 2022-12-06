@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16sp"
+    android:paddingRight="16sp"
+    android:gravity="center">
+
+    <Button
+        android:id="@+id/btn_close_dialog"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="16sp"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="8sp"
+        android:backgroundTint="@color/colorPrimaryDark"
+        android:background="@drawable/ic_close" />
+
+    <FrameLayout
+        android:id="@+id/dialog_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16sp"
+        android:background="@drawable/telederma_dialog_background"
+        android:layout_below="@id/btn_close_dialog"></FrameLayout>
+
+</RelativeLayout>

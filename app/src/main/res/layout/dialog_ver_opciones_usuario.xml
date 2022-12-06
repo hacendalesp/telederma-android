@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="16sp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginLeft="2sp"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/btn_compartir"
+                    android:layout_width="130sp"
+                    android:layout_height="130sp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="10sp"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:background="@drawable/round_button_opciones"
+                    android:drawableTop="@drawable/compartir_p"
+                    android:drawableTint="@color/white"
+                    android:text="@string/compartir"
+                    android:textColor="@color/white"
+                    android:textSize="15dp"
+                    android:paddingTop="20dp"
+                    />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginLeft="2sp"
+                android:orientation="vertical">
+                <Button
+                    android:id="@+id/btn_archivar"
+                    android:layout_width="130sp"
+                    android:layout_height="130sp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="5sp"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:background="@drawable/round_button_opciones"
+                    android:drawableTop="@drawable/archivar_p"
+                    android:drawableTint="@color/white"
+                    android:text="@string/archivar"
+                    android:textColor="@color/white"
+                    android:paddingTop="20dp"
+                    android:textSize="15dp"
+                    />
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

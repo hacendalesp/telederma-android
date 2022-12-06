@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:contexto=".fragments.PatologiaFragment">
+
+
+    <com.telederma.gov.co.patologia.NoteImageView
+        android:id="@+id/imagen_de_atras"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:src="@drawable/cuerpo_espalda_atras"
+        android:visibility="gone" />
+
+    <com.telederma.gov.co.patologia.NoteImageView
+        android:id="@+id/imagen_de_frente"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:src="@drawable/anatomical_chart_front"
+        android:visibility="gone" />
+
+    <com.telederma.gov.co.patologia.NoteImageView
+        android:id="@+id/imagen_de_atras_hombre"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:src="@drawable/hombre_posterior_cuerpo_espalda"
+        android:visibility="gone" />
+
+    <com.telederma.gov.co.patologia.NoteImageView
+        android:id="@+id/imagen_de_frente_hombre"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:src="@drawable/hombre_cuerpo_hombre_frente"
+        android:visibility="gone" />
+    <!-- Controls -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_weight="1"
+        android:gravity="center|bottom"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/btn_back_body"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_margin="10dp"
+                android:alpha="0.5"
+                android:background="@drawable/ic_back_body"
+                android:backgroundTint="@color/colorPrimaryDark" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:orientation="vertical"
+            android:layout_marginBottom="80dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp">
+
+            <EditText
+                android:id="@+id/txt_nombre_parte"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/nueva_consulta_nombre_parte_hint"
+                android:imeOptions="actionNext"
+                android:inputType="textCapWords|textPersonName" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10sp">
+
+                <Button
+                    style="@style/telederma_button_dark"
+                    android:visibility="invisible"
+                    android:id="@+id/btn_continuar"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:text="@string/nueva_consulta_continuar" />
+
+                <Button
+                    style="@style/telederma_button"
+                    android:visibility="gone"
+                    android:id="@+id/btn_continuar_sin_imagenes"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10sp"
+                    android:text="@string/nueva_consulta_continuar_sin_imagenes" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

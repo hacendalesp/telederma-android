@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/colorPrimary"
+    tools:contexto="com.telederma.gov.co.fragments.IniciarSesionFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginTop="30dp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/splash_logo" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24sp"
+            android:text="@string/login_bienvenido"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="16pt"
+            android:textStyle="normal" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="2px"
+
+            android:background="@color/white"></LinearLayout>
+
+        <TextView
+            style="@style/telederma_text_view_label"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="@string/label_usuario"
+            android:textStyle="bold"
+            android:textColor="@color/white" />
+
+        <EditText
+            android:id="@+id/txt_documento"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="numberPassword|textVisiblePassword"
+            android:imeOptions="actionNext"
+            android:hint="@string/login_cedula_hint" />
+
+        <TextView
+            style="@style/telederma_text_view_label"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16sp"
+            android:text="@string/label_contrasena"
+            android:textStyle="bold"
+            android:textColor="@color/white" />
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:hintEnabled="false"
+            app:passwordToggleEnabled="true"
+            android:layout_marginBottom="16dp">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/txt_contrasena"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:imeOptions="actionDone"
+                android:hint="@string/login_contrasena_hint"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <!--<EditText-->
+            <!--android:id="@+id/txt_contrasena"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:inputType="textPassword"-->
+            <!--android:imeOptions="actionDone"-->
+            <!--android:hint="@string/login_contrasena_hint" />-->
+
+        <LinearLayout
+            android:id="@+id/btn_olvide_contrasena"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:paddingTop="2dp"
+                android:textColor="@color/white"
+                android:textAlignment="center"
+                android:textSize="8pt"
+                android:text="@string/login_olvide_contrasena" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="2px"
+                android:layout_marginTop="2dp"
+                android:layout_marginBottom="2dp"
+                android:background="@color/white"></LinearLayout>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_ingresar"
+            style="@style/telederma_button_light"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center"
+            android:text="@string/login_ingresar" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="2px"
+            android:layout_marginTop="20dp"
+            android:background="@color/white"></LinearLayout>
+
+        <Button
+            android:id="@+id/btn_soy_nuevo"
+            style="@style/telederma_button_dark"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center"
+            android:text="@string/login_soy_nuevo_title" />
+
+    </LinearLayout>
+
+</LinearLayout>

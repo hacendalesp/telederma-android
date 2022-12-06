@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ScrollView
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+                    <TextView
+                        style="@style/telederma_text_view_formulario_blue"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="@string/dialog_descartar_req_advertencia" />
+
+                    <TextView
+                        style="@style/telederma_text_view_formulario_gray"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:layout_marginTop="8sp"
+                        android:text="@string/dialog_descartar_req_motivo" />
+
+                    <RadioGroup
+                        android:id="@+id/rg_motivo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16sp">
+
+                        <RadioButton
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:tag="1"
+                            android:text="@string/dialog_descartar_req_radio_1" />
+
+                        <RadioButton
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:tag="2"
+                            android:text="@string/dialog_descartar_req_radio_2" />
+
+                        <RadioButton
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:tag="3"
+                            android:text="@string/dialog_descartar_req_radio_3" />
+
+                    </RadioGroup>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8sp"
+                        android:text="@string/dialog_descartar_req_otro" />
+
+                    <EditText
+                        android:id="@+id/txt_otro"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8sp"
+                        android:inputType="textCapSentences"
+                        android:hint="@string/dialog_descartar_req_hint_otro" />
+
+                    <Button
+                        android:id="@+id/btn_descartar"
+                        style="@style/telederma_button"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16sp"
+                        android:text="@string/dialog_descartar_req_descartar" />
+
+                    <Button
+                        android:id="@+id/btn_cancelar"
+                        style="@style/telederma_button_gray"
+                        android:layout_marginTop="16sp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/label_cancelar" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

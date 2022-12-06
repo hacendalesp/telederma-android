@@ -1,0 +1,522 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="none">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4sp"
+            android:background="@drawable/round_gray_background"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/telederma_text_view_formulario_blue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/label_nombre" />
+
+            <TextView
+                android:id="@+id/id_paciente_nombre"
+                style="@style/telederma_text_view_formulario_gray"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4sp"
+            android:background="@drawable/round_gray_background"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/telederma_text_view_formulario_blue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/ver_paciente_consentimiento_informado" />
+
+            <TextView
+                android:id="@+id/id_paciente_consentimiento"
+                style="@style/telederma_text_view_formulario_gray"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4sp"
+            android:background="@drawable/round_gray_background"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/telederma_text_view_formulario_blue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/ver_paciente_tipo_identificacion" />
+
+            <TextView
+                android:id="@+id/id_paciente_tipo_documento"
+                style="@style/telederma_text_view_formulario_gray"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/id_paciente_condicion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4sp"
+            android:background="@drawable/round_gray_background"
+            android:visibility="gone"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/telederma_text_view_formulario_blue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/ver_paciente_condicion" />
+
+            <TextView
+                android:id="@+id/txt_id_paciente_condicion"
+                style="@style/telederma_text_view_formulario_gray"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4sp"
+            android:background="@drawable/round_gray_background"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/telederma_text_view_formulario_blue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/ver_paciente_numero_identificacion" />
+
+            <TextView
+                android:id="@+id/id_paciente_numero_identificacion"
+                style="@style/telederma_text_view_formulario_gray"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4sp"
+            android:background="@drawable/round_gray_background"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/telederma_text_view_formulario_blue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/ver_paciente_asegurador" />
+
+            <TextView
+                android:id="@+id/id_paciente_asegurador"
+                style="@style/telederma_text_view_formulario_gray"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4sp"
+            android:background="@drawable/round_gray_background"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/telederma_text_view_formulario_blue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/ver_paciente_estado_civil" />
+
+            <TextView
+                android:id="@+id/id_paciente_estado_civil"
+                style="@style/telederma_text_view_formulario_gray"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4sp"
+            android:background="@drawable/round_gray_background"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/telederma_text_view_formulario_blue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/ver_paciente_edad" />
+
+            <TextView
+                android:id="@+id/id_paciente_edad"
+                style="@style/telederma_text_view_formulario_gray"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4sp"
+            android:background="@drawable/round_gray_background"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/telederma_text_view_formulario_blue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/ver_paciente_fecha_nacimiento" />
+
+            <TextView
+                android:id="@+id/id_paciente_fecha_nacimiento"
+                style="@style/telederma_text_view_formulario_gray"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4sp"
+            android:background="@drawable/round_gray_background"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/telederma_text_view_formulario_blue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/ver_paciente_sexo" />
+
+            <TextView
+                android:id="@+id/id_paciente_opcion_sexo"
+                style="@style/telederma_text_view_formulario_gray"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4sp"
+            android:background="@drawable/round_gray_background"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/telederma_text_view_formulario_blue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/ver_paciente_ocupacion" />
+
+            <TextView
+                android:id="@+id/id_paciente_ocupacion"
+                style="@style/telederma_text_view_formulario_gray"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4sp"
+            android:background="@drawable/round_gray_background"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/telederma_text_view_formulario_blue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/ver_paciente_celular" />
+
+            <TextView
+                android:id="@+id/id_paciente_celular"
+                style="@style/telederma_text_view_formulario_gray"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4sp"
+            android:background="@drawable/round_gray_background"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/telederma_text_view_formulario_blue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/ver_paciente_email" />
+
+            <TextView
+                android:id="@+id/id_paciente_email"
+                style="@style/telederma_text_view_formulario_gray"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4sp"
+            android:background="@drawable/round_gray_background"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/telederma_text_view_formulario_blue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/ver_paciente_direccion_domicilio" />
+
+            <TextView
+                android:id="@+id/id_paciente_direccion"
+                style="@style/telederma_text_view_formulario_gray"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4sp"
+            android:background="@drawable/round_gray_background"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/telederma_text_view_formulario_blue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/ver_paciente_departamento" />
+
+            <TextView
+                android:id="@+id/id_paciente_departamento"
+                style="@style/telederma_text_view_formulario_gray"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4sp"
+            android:background="@drawable/round_gray_background"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/telederma_text_view_formulario_blue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/ver_paciente_municipio" />
+
+            <TextView
+                android:id="@+id/id_paciente_municipio"
+                style="@style/telederma_text_view_formulario_gray"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4sp"
+            android:background="@drawable/round_gray_background"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/telederma_text_view_formulario_blue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/ver_paciente_zona_de_residencia" />
+
+            <TextView
+                android:id="@+id/id_paciente_opcion_residencial"
+                style="@style/telederma_text_view_formulario_gray"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/id_paciente_persona_acompanante"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4sp"
+            android:background="@drawable/round_gray_background"
+            android:visibility="gone"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/telederma_text_view_formulario_blue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/ver_paciente_persona_acompanante" />
+
+            <TextView
+                android:id="@+id/id_paciente_acompanante_nombre"
+                style="@style/telederma_text_view_formulario_gray"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/id_paciente_acompanante_celular"
+                style="@style/telederma_text_view_formulario_gray"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/id_paciente_persona_responsable"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4sp"
+            android:visibility="gone"
+            android:background="@drawable/round_gray_background"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/telederma_text_view_formulario_blue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/ver_paciente_persona_responsable" />
+
+            <TextView
+                android:id="@+id/id_paciente_responsable_nombre"
+                style="@style/telederma_text_view_formulario_gray"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/id_paciente_responsable_celular"
+                style="@style/telederma_text_view_formulario_gray"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/id_paciente_responsable_parentesco"
+                style="@style/telederma_text_view_formulario_gray"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4sp"
+            android:background="@drawable/round_gray_background"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/telederma_text_view_formulario_blue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/ver_paciente_tipo_usuario" />
+
+            <TextView
+                android:id="@+id/id_paciente_tipo_usuario"
+                style="@style/telederma_text_view_formulario_gray"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/id_paciente_autorizacion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4sp"
+            android:background="@drawable/round_gray_background"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/telederma_text_view_formulario_blue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/ver_paciente_numero_autorizacion" />
+
+            <TextView
+                android:id="@+id/id_paciente_numero_autorizacion"
+                style="@style/telederma_text_view_formulario_gray"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4sp"
+            android:background="@drawable/round_gray_background"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/telederma_text_view_formulario_blue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/ver_paciente_finalidad_consulta" />
+
+            <TextView
+                android:id="@+id/id_paciente_finalidad"
+                style="@style/telederma_text_view_formulario_gray"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4sp"
+            android:background="@drawable/round_gray_background"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/telederma_text_view_formulario_blue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/ver_paciente_causa_externa" />
+
+            <TextView
+                android:id="@+id/id_paciente_causa_externa"
+                style="@style/telederma_text_view_formulario_gray"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

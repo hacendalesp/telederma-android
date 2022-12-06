@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="5dp"
+    android:background="@drawable/round_white_background">
+
+    <LinearLayout
+        android:id="@+id/lay_reproductor"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="5dp"
+        android:weightSum="1">
+
+        <Button
+            android:id="@+id/btn_play"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:backgroundTint="@color/blue"
+            android:background="@drawable/ic_play_circle_outline" />
+
+        <SeekBar
+            android:id="@+id/sbr_play"
+            android:layout_width="0dp"
+            android:layout_weight="0.85"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:id="@+id/lbl_play_tiempo"
+            android:layout_width="0dp"
+            android:layout_weight="0.15"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textColor="@color/blue"
+            android:textSize="6pt"
+            android:text="00:00" />
+
+        <Button
+            android:id="@+id/btn_remove"
+            android:layout_width="30sp"
+            android:layout_height="30sp"
+            android:gravity="center"
+            android:visibility="gone"
+            android:layout_marginStart="10sp"
+            android:background="@drawable/round_button_red"
+            android:drawableTop="@drawable/ic_close"
+            android:drawableTint="@color/white" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lay_descarga"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lay_reproductor"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/lbl_descarga_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="5dp"
+            android:paddingEnd="0dp"
+            android:text="@string/reproductor_audio_progreso_descargar" />
+
+        <TextView
+            android:id="@+id/lbl_descarga"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:text="0" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="2dp"
+            android:text="%" />
+
+    </LinearLayout>
+
+</RelativeLayout>
